@@ -1,0 +1,1 @@
+Can be used in [[Obsidian]], GitHub readmes & [[ChatGPT]]

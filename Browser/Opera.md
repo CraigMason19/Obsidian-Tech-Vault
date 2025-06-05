@@ -1,0 +1,6 @@
+#browser
+
+Open console
+```
+CTRL + `
+```
