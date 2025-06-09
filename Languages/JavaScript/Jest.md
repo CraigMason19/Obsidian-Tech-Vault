@@ -36,3 +36,44 @@ npm install --save-dev jest ts-jest @types/jest
 ```
 
 ---
+### JavaScript Example (JEST)
+
+[JEST](https://www.npmjs.com/package/jest)
+
+```JS
+// Save as a dev dependancy, don't commit to git 
+npm install jest --save-dev
+
+// In package.json add this
+"scripts": {
+	"test": "jest"
+	// OR add extra flags
+	"test": "jest --watchAll --coverage --verbose"
+},
+
+// Then create a folder called tests anf add tests that end in .test.js
+lib.test.js
+
+// Add tests here. Use describe to group related tests!
+describe("absolute", () => {
+    test("should return a positive number if input is positive", () => {
+        const result = lib.absolute(1);
+        expect(result).toBe(1); 
+    });
+
+    test("should return a positive number if input is negative", () => {
+        const result = lib.absolute(-1);
+        expect(result).toBe(1);
+    });
+
+    test("should return 0 if input is 0", () => {
+        const result = lib.absolute(0);
+        expect(result).toBe(0);
+    });
+});
+
+// Then run
+npm test
+```
+
+---
