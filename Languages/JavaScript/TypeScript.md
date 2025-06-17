@@ -121,13 +121,23 @@ const nothing = () : void => {
 ### Enum
 
 ```TypeScript
-enum ResourceType { Texture, Shader, Model }
+enum MarkingType {
+    None = "None",
+    Random = "Random",
+    Number = "Number",
+    Numeral = "Numeral",
+    Dash = "Dash"
+}
 
-const foo = (r: ResourceType): void => {
+const foo = (m: MarkingType): void => {
     console.log(r)
 };
-
-foo(ResourceType.Shader); // 1
+  
+// Generic function to get a random enum value
+const getRandomEnumValue = <T extends Record<string, string | number>>(enumObject: T): T[keyof T] => {
+    const values = Object.values(enumObject) as T[keyof T][];
+    return values[Math.floor(Math.random() * values.length)];
+};
 ```
 
 ### Dictionaries
