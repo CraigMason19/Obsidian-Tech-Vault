@@ -53,31 +53,36 @@ Allows scripting via [[Python]]
 
 There are 3 types of unit measurements in Blender
 
-  
 
 - "None" represents simple 'unit' based measurement.
-    
 - "Metric" represents "millimetres", "meters" etc.
-    
 - "Imperial" represents "inches", "foot", "mile" etc.
-    
 
   
 
 Metric units are the default standard of measurement in 3D printing. So switching to “Metric” units in “Properties Window > Scene > Units > Length” sets the base unit to "1 Meter" and "Scale: 1.000" this means;
 
   
-
 - 0.001 = 1mm (one millimeter)
-    
 - 0.010 = 1cm (one centimetre)
-    
 - 0.100 = 1dm (one decimetre/ten centimetres)
-    
 - 1.000 = 1m (one metre)
-    
 - 1000.000 = 1km (one kilometre)
-    
+
+
+## Bambu Mini A1
+
+- Scene properties
+	- Set units to metric
+	- Set scale as 1
+	- Set length to meters
+
+Now in blender every meter will be a a mm on the plate. 
+E.g. In blender a cube of 10 x 10 x 10 will be a 1cm cube. 
+
+
+
+
 
 ## Scanning and then printing images 1:1
 
