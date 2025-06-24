@@ -62,7 +62,7 @@ Allows you to specify multiple classes that must be present on an element to sel
 This is a trick that outlines ALL CSS elements so that you can see the outline of all CSS elements
 
 ```css
-* {
+.show-borders {
 	outline: 1px solid Black
 }
 ```
