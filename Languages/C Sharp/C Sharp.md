@@ -11,6 +11,8 @@ A programming language developed by Microsoft but is now fully open source & cro
 - [[#Is Letter & Change Each Character In String]]
 - [[#Extension Methods]]
 - [[#Decimal Places]]
+- [[#Anonymous Classes]]
+
 
 
 
@@ -19,7 +21,7 @@ A programming language developed by Microsoft but is now fully open source & cro
 [[#Equality & GetHashCode]]
 [[#Switch]]
 [[#Generator]]
-
+[[#Namespaces]]
 
 [[#Keywords]]
 - [[#Required]]
@@ -28,6 +30,7 @@ A programming language developed by Microsoft but is now fully open source & cro
 ---
 ## Useful Snippets
 
+```
 ### Ternary Operator
 
 Takes the form of  ```condition ? trueExpression : falseExpression```. Exactly the same as in JavaScript
@@ -70,6 +73,16 @@ public static int WordCount(this string str) => return str.Split().Length;
 
 ```C# 
 x.ToString($F{3});
+```
+
+---
+### Anonymous Classes
+
+Can be used to create a class in place without defining it. One time use classes
+
+```c#
+var data = new { a = 5, b = 10 };
+Console.WriteLine(data.a * data.b); // 50
 ```
 
 ---
@@ -414,3 +427,31 @@ only for inheriting
 can have many interfaces that the class must implement
 
 ---
+
+## Namespaces
+
+### Reduced Namespace Brackets
+
+You can add a ; to the namespace you are in (usually only one namespace per file) to reduce the block level scope to make code easier to read.
+
+```c#
+namespace ConsoleApp;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        // ...
+    }
+}
+```
+### Static Namespaces
+
+You can add the static keyword to reduced namespace clutter
+
+```c#
+using static System.Console; 
+
+Console.WriteLine("Hello, World!");
+WriteLine("Hello, World!");
+```
