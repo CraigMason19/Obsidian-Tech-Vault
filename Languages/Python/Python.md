@@ -60,6 +60,9 @@ code .
 cd .venv\Scripts
 ./activate
 // should say (.env) before location in terminal
+
+// OR, in a powershell terminal
+.\.venv\Scripts\Activate.ps1
 ```
 
 ### Requirements
