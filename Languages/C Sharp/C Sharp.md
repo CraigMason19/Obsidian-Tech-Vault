@@ -30,7 +30,6 @@ A programming language developed by Microsoft but is now fully open source & cro
 ---
 ## Useful Snippets
 
-```
 ### Ternary Operator
 
 Takes the form of  ```condition ? trueExpression : falseExpression```. Exactly the same as in JavaScript
