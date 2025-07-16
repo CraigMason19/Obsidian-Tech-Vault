@@ -110,20 +110,66 @@ namespace LotteryApp.UnitTests
 ---
 ### Python Example
 
-```Python
+Look at `music_theory` for a real example. Large classes are split up by methods which become there own test classes  
+#### Console commands
+```python
 python -m coverage run -m unittest discover
 
 
-
-
 python -m coverage run -m unittest discover music_theory_tests
-
 
 
 python -m coverage report
 python -m coverage report -m
 
 python -m coverage html
+```
+
+
+```python
+class TestExample(unittest.TestCase):
+	# NOTE - the camelCase syntax. Important that they are named this way.
+	
+	#---------------------------------------------------------------------------
+    # setUpClass and tearDownClass run before and after all tests, called once
+    #---------------------------------------------------------------------------
+    
+    @classmethod
+    def setUpClass(cls):
+        pass
+        
+    @classmethod
+    def tearDownClass(cls):
+        # Use for cleanup
+        pass
+        
+    #---------------------------------------------------------------------------
+    # setUp and tearDown run before every single test.
+    #---------------------------------------------------------------------------
+    def setUp(self):
+        pass
+        
+    def tearDown(self):
+        pass
+```
+
+```Python
+class TestBase(unittest.TestCase):
+    def setUp(self):
+        self.first_name = "Craig"
+        
+    def test_first_name(self):
+        first_name = f"{self.first_name}"
+        self.assertEqual(first_name, "Craig")
+
+class TestExtra(TestBase):
+    def setUp(self):
+        super().setUp()  # important to inherit setup from TestBase
+        self.last_name = "Mason"
+        
+    def test_full_name(self):
+        full_name = f"{self.first_name} {self.last_name}"
+        self.assertEqual(full_name, "Craig Mason")
 ```
 
 ---
