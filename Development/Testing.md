@@ -112,19 +112,11 @@ namespace LotteryApp.UnitTests
 
 Look at `music_theory` for a real example. Large classes are split up by methods which become there own test classes  
 #### Console commands
+
 ```python
-python -m coverage run -m unittest discover
-
-
 python -m coverage run -m unittest discover music_theory_tests
-
-
-python -m coverage report
-python -m coverage report -m
-
 python -m coverage html
 ```
-
 
 ```python
 class TestExample(unittest.TestCase):
