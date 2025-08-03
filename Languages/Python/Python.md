@@ -61,7 +61,8 @@ cd .venv\Scripts
 ./activate
 // should say (.env) before location in terminal
 
-// OR, in a powershell terminal
+// OR, 
+// Activate venv in a powershell terminal
 .\.venv\Scripts\Activate.ps1
 ```
 
@@ -152,7 +153,10 @@ Install a package from disk
 `pip install path/to/your/package`
 
 Install from GitHub
-`pip install git+https://github.com/CraigMason19/music_theory`
+
+```
+pip install git+https://github.com/CraigMason19/music_theory
+```
 
 Use without installation. Modify sys.path temporarily
 ```python

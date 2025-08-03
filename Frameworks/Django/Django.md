@@ -38,7 +38,7 @@ python -m venv .venv
 .venv/scripts/activate
 
 pip install django
-pip install djangorestframework
+pip install djangorestframework ??
 
 django-admin startproject drinks .
 
@@ -54,6 +54,7 @@ http://127.0.0.1:8000/
 
 ``python manage.py startapp portfolio
 
+you can have multiple django apps in a django project
 index.html
 ---
 

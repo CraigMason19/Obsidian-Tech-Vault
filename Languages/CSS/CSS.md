@@ -76,6 +76,17 @@ document.addEventListener('keydown', function(event) {
         document.body.classList.toggle('show-borders');
     }
 });
+
+// OR
+
+//DEBUG
+document.addEventListener('keydown', function(event) {
+	if (event.key === 'd' || event.key === 'D') {
+		document.querySelectorAll('*').forEach(el => {
+			el.classList.toggle('show-borders');
+		});
+	}
+});
 ```
 
 ---
@@ -150,34 +161,18 @@ Variables
 ```css
 // Class
 .center {
-
     position: absolute;
-
     border-radius: 50%;
-
 }
-
-  
 
 #hour-center, center {
-
     width: var(--size-hour-center);
-
     height: var(--size-hour-center);
-
-  
-
     left: calc(50% - (var(--size-hour-center) / 2));
-
     bottom: calc(50% - (var(--size-hour-center) / 2));
-
-  
-
     background-color: var(--color-hour);
-
 }
 ```
-
 
 OR
 
@@ -211,6 +206,8 @@ I like to make a constants.css file and import that into other files
 
 /* other.css */
 @import './constants.css';
+
+background-color: var(--color-background);
 ```
 
 ---
