@@ -37,6 +37,8 @@ JavaScript doesn't need the semi colon but it's good practice. Like a full stop 
 [[#Imports / Exports]]
 [[#Comments]]
 [[#Dictionaries]]
+[[#DOMContentLoaded]]
+[[#JSDoc]]
 
 ---
 ## Useful Snippets
@@ -423,6 +425,18 @@ for (let [key, value] of Object.entries(teams))
 
 ---
 ## DOMContentLoaded
+
+The `DOMContentLoaded` event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, frames, and async script `<script async src="...">` to complete loading.
+
+**NOTE:** 
+- Putting the script tag at the bottom of the `<body>`, means that all elements above it are already parsed and in the DOM.
+- Only really necessary if the script tag is in the head and its relying on elements not yet declared.
+
+```js
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("DOM fully loaded and parsed.");
+});
+```
 
 ---
 # JSDoc
