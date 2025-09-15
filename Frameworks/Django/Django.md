@@ -13,14 +13,21 @@ https://docs.djangoproject.com/en/4.2/ref/forms/fields/
 
 [Sjango tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page)
 
-
 <hr>
+
+## TOC
+
+- [[#Create a new project]]
+- [[#Create a new App]]
+
+
+
 ## Notes
 - Django HTML has access to request e.g. {{ request.user }}
 - Every project should contain 1 or more apps.
 
 <hr>
-## Create a new project
+### Create a new project
 
 ```
 example: drinks (can't use hyphen for names e.g. minimal-portfolio -> minimal_portfolio)
@@ -47,20 +54,27 @@ django-admin startproject drinks .
 
 ```python
 python manage.py runserver
-http://127.0.0.1:8000/
+http://127.0.0.1:8000/ # Django default
 ```
 
-## Create a new App
+### Create a new App
 
 ``python manage.py startapp portfolio
 
 you can have multiple django apps in a django project
-index.html
+
+Django apps that are purely functional modules with no URLs of their own. These are often called service apps, utility apps, or domain logic apps, and they’re a great way to isolate reusable logic without exposing routes.
+ 
+ index.html
 ---
 
 
 
+## Messages
 
+https://docs.djangoproject.com/en/5.2/ref/contrib/messages
+
+My music theory docs bake app has an example of this, also styling akin to bootstrap alerts
 
 
 
