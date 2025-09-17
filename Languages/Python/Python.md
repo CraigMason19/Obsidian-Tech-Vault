@@ -10,6 +10,7 @@ Contents
 - [[#args & kwargs]]
 - [[#Modules / Packages]]
 - [[#Type Hinting]]
+- [[#Docstrings]]
 
 ---
 ## Mixin
@@ -217,3 +218,48 @@ type OptionalNumber = int | float | None
 ```
 
 ---
+## Docstrings
+
+A string in a class / module / function / method
+
+**Function / method level**
+```python
+def unique_notes_in_chord(*args):
+"""
+Collects all unique notes from the given Chords and returns them as a 
+list, sorted by the the Notes enumeration value.
+
+Example:
+    >>> unique_notes_in_chords(
+	...     Chord(Note.A, ChordType.Major),
+	...     Chord(Note.A, ChordType.Minor)
+	... )
+	[Note.C, Note.Db, Note.E, Note.A]
+	
+Args:
+	*args: 
+		One or more Chord objects to extract notes from.
+		
+Returns:
+	list[Note]: 
+		A list of unique Notes sorted by their value.
+""" 
+```
+
+**Module Level**
+```python
+"""
+Defines the KeyType enumeration for musical keys, representing either major or minor.
+
+This module provides:
+- An Enum class `KeyType` with two values: Major and Minor.
+- Utility methods to list all key types, select a random key type, and retrieve the parallel (opposite) key.
+- String representations for clean display and debugging.
+
+Example:
+    from music_theory.key_type import KeyType
+
+    kt = KeyType.Major
+    print(f"Selected key: {kt}, Parallel: {kt.parallel}")
+"""
+```
