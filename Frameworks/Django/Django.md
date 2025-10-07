@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.2/ref/forms/fields/
 
 [Sjango tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page)
 
+[Package to allow CSS modification](https://github.com/adamchainz/django-browser-reload)
+
 <hr>
 
 ## TOC
@@ -44,8 +46,7 @@ python -m venv .venv
 => open folder in VS Code. Save workspace. Open workspace terminal
 .venv/scripts/activate
 
-pip install django
-pip install djangorestframework ??
+pip install django 
 
 django-admin startproject drinks .
 
@@ -59,7 +60,92 @@ http://127.0.0.1:8000/ # Django default
 
 ### Create a new App
 
-``python manage.py startapp portfolio
+``python manage.py startapp example_app
+
+then in example_app.views.py
+```python
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
+```
+
+example_app.urls.py
+```python
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path("", views.index, name="index"),
+]
+```
+
+Project level urls.py
+```python
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('whatever/', include('example_app.urls')), 
+]
+```
+
+add app to installed apps in `settings.py`
+
+```python
+INSTALLED_APPS = [
+	...
+    'foobar',
+    'whatever_app',
+]
+```
+
+---
+### Create a HTML page with CSS
+
+Make sure static is enabled in settings.py
+```python
+INSTALLED_APPS = [
+    "django.contrib.staticfiles",
+    # ... your apps
+]
+```
+
+Create a HTML file `example_app/templates/index.html`
+```html
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polls Index</title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+<body>
+    <h1>Hello, world. You're at the polls index.</h1>
+    <p>This is a styled page using Django templates.</p>
+</body>
+</html>
+```
+
+create a static folder `example_app/static` and add a CSS file
+
+replace the contents of example_app/views.py to
+
+```python
+from django.shortcuts import render
+
+def index(request):
+    return render(request, "index.html")
+```
+
+
+
+
 
 you can have multiple django apps in a django project
 
