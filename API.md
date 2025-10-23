@@ -6,6 +6,10 @@
 
 [[#API's]]
 
+
+FETCH -> the **modern, built-in** JS way to make HTTP requests. then you determine what type of request it is and how to handle it
+
+
 ---
 ## Requests
 
@@ -14,6 +18,7 @@
 3. PUT updates data entirely.
 4. PATCH allows partially updating data.
 5. DELETE removes data.
+
 
 ---
 ## Routes
