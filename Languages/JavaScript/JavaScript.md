@@ -456,3 +456,25 @@ export function isInRange(value, inclusiveMin, inclusiveMax) {
     return value >= inclusiveMin && value <= inclusiveMax;
 }
 ```
+
+```js
+/**
+ * Fetches tool results from the backend using the input elements.
+ *
+ * @function
+ * @returns {void}
+ */
+function fetchToolResults() {
+    ...
+}
+
+
+/**
+ * Displays the fetched data in the output elements.
+ *
+ * @param {Object} data - The data returned from the server.
+ */
+function displayResults(data) {
+    ...
+}
+```
