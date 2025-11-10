@@ -312,4 +312,11 @@ Returns:
 	list[Note]: 
 		A list of unique Notes sorted by their value.
 """ 
+
+
+
+from typing import Self # 3.11
+def __eq__(self, other: Self) -> bool:
+
 ```
+
