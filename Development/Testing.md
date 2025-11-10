@@ -128,8 +128,9 @@ class TestExample(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):
-        pass
-        
+	    cls.x = x
+	    pass
+	        
     @classmethod
     def tearDownClass(cls):
         # Use for cleanup
