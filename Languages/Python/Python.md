@@ -11,6 +11,7 @@ Contents
 - [[#Modules / Packages]]
 - [[#Type Hinting]]
 - [[#Docstrings]]
+- [[#F-Strings]]
 
 ---
 ## Mixin
@@ -320,3 +321,53 @@ def __eq__(self, other: Self) -> bool:
 
 ```
 
+---
+## F-Strings
+
+```python
+# Decimal places & percentages
+print(f'{3.141592:.2f}') # 3.14
+
+print(f'{0.75:.2%}') # 75.00%
+print(f'{0.75:.0%}') # 75%
+
+
+# Leading zeros. 0001 0011 0111 1111
+for _ in [1, 11, 111, 1111]:
+    print(f'{_:04}')
+
+
+# Thousands seperator
+print(f'{1000000000000000000:_}')
+print(f'{1000000000000000000:,}')
+
+
+# Alignment
+print(f'Result -> {"hello":<10}...') # 'Result -> hello     ...'
+print(f'Result -> {"hello":^10}...') # 'Result ->   hello   ...'
+print(f'Result -> {"hello":>10}...') # 'Result ->      hello...'
+
+print(f'Result -> {"hello":_^10}...') # 'Result -> __hello___...'
+```
+### Dynamic Formatting
+
+Can also dynamically control the formatting by using nested curly brackets
+
+```python
+precision = 4
+print(f'{3.141592:.{precision}f}') # 3.1416
+```
+### Debugging
+
+Can also be used for quickly debugging
+
+```python
+x, y = 'Hello', 'Craigy'
+
+print(f'{x=} {y=}')     # x='Hello' y='Craigy'
+print(f'{x = } {y = }') # x = 'Hello' y = 'Craigy'
+
+print(f'{len(x)=} {len(y)=}') # len(x)=5 len(y)=6
+```
+
+---
