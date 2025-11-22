@@ -21,7 +21,7 @@ https://docs.djangoproject.com/en/4.2/ref/forms/fields/
 
 - [[#Create a new project]]
 - [[#Create a new App]]
-
+- [[#Environment Variables & Secrets]]
 
 
 ## Notes
@@ -152,10 +152,44 @@ you can have multiple django apps in a django project
 Django apps that are purely functional modules with no URLs of their own. These are often called service apps, utility apps, or domain logic apps, and they’re a great way to isolate reusable logic without exposing routes.
  
  index.html
+ 
 ---
+## Environment Variables & Secrets
 
 
+- Install `dotenv` 
+	- `pip install python-dotenv`
+	
+- Update your `settings.py`:
+```python
+import os
+from dotenv import load_dotenv
+ 
+# Loads .env in dev, does nothing in prod
+load_dotenv()  
+ 
+REQUIRED_ENV_VARS = [
+    "DJANGO_SECRET_KEY",
+]
 
+for var in REQUIRED_ENV_VARS:
+    if not os.getenv(var):
+        raise ValueError(f"{var} is not set in the environment!")
+
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+```
+
+- Create `.env` file in project root (next to manage.py)
+	- **MAKE SURE TO ADD TO GITIGNORE!!!!!!!!!**
+
+- It can then be used like this
+```python
+from django.conf import settings
+
+settings.SECRET_KEY
+```
+
+---
 ## Messages
 
 https://docs.djangoproject.com/en/5.2/ref/contrib/messages
