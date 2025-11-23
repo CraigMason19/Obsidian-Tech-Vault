@@ -156,8 +156,19 @@ Django apps that are purely functional modules with no URLs of their own. These 
 ---
 ## Environment Variables & Secrets
 
+By default Django puts a example `SECRET_KEY` in `settings.py`. 
 
-- Install `dotenv` 
+This obviously bad practice, as if it is committed to via `git` the secret will be visible in the repo. This is bad as bad actors can...
+- Forge session cookies (log in as anyone)
+- Generate valid password reset tokens
+- Break CSRF protection in some cases
+- Mess with any signed data
+
+Instead we use environment variables. The method below reads the values from a `.env` file locally, this is for use it development, when in production the `.env` file won't be present and will silently do nothing and then look for environment variables on the server / hosting platform.
+
+### Example
+
+- Install [dotenv](https://pypi.org/project/python-dotenv/) 
 	- `pip install python-dotenv`
 	
 - Update your `settings.py`:
@@ -187,6 +198,19 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 from django.conf import settings
 
 settings.SECRET_KEY
+```
+
+**Notes:**
+- Default values. 
+```python
+from django.core.management.utils import get_random_secret_key
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
+```
+
+- Environment variables are always strings. So remember to convert.
+```python
+PORT = int(os.getenv("PORT", "8000"))
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
 ```
 
 ---
