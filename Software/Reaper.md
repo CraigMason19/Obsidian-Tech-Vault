@@ -10,3 +10,7 @@
 
 
 
+
+**NEURAL AMP MODELER**
+- [NEURAL AMP MODELER](https://www.neuralampmodeler.com)
+- [TONE3000 - get amp models - formally ToneHunt](https://www.tone3000.com)
