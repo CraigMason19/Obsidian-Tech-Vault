@@ -5,6 +5,7 @@ Uses [[Typing#Duck Typing]]
 [Python Package Index](https://pypi.org) - Finds packages to install
 
 Contents
+- [[#is_empty_or_whitespace]]
 - [[#Mixin]]
 - [[#Virtual Environments]]
 - [[#args & kwargs]]
@@ -12,6 +13,26 @@ Contents
 - [[#Type Hinting]]
 - [[#Docstrings]]
 - [[#F-Strings]]
+
+---
+## is_empty_or_whitespace
+
+Not in Python. So here's a simple reusable one
+
+```python
+def is_empty_or_whitespace(s: str) -> bool:
+    """
+    A simple function to determine if a string is empty or made of whitespaces.
+
+    Args:
+        s (str):
+            The string to validate.
+
+    Returns:
+        bool:
+    """
+    return not s or s.isspace()
+```
 
 ---
 ## Mixin
