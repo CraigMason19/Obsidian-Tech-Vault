@@ -11,7 +11,15 @@
 
 That's it!
 
-## Make Directories & Folders
+## Windows Commands
+
+[Windows Commands](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+
+### Opening cmd and powershell
+
+You type `cmd` or `powershell` in the folders address bar to open a window at that location.
+
+### Make Directories & Folders
 
 ```
 cd desktop
@@ -22,3 +30,5 @@ cd foo
 
 notepad bar.md
 ```
+
+
