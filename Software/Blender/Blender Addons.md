@@ -2,14 +2,16 @@ Add-ons allow extra functionality to added [[Blender]].
 
 Good places to look are Gumroad & [Blender Market](https://blendermarket.com)
 
+[Blender API](https://docs.blender.org/api/current/info_overview.html)
+
 [[#Useful Plugins]]
 
-[[#Creating Custom Addons]]
-	Links
-	- [Add-on Tutorial](https://docs.blender.org/manual/en/latest/advanced/scripting/addon_tutorial.html)
-	Notes
-	- [[#Process]]
-	- [[#Register / Unregister]]
+[[#Creating Custom Addons / Scripts]]
+- Links
+- [Add-on Tutorial](https://docs.blender.org/manual/en/latest/advanced/scripting/addon_tutorial.html)
+- Notes
+- [[#Process]]
+- [[#Register / Unregister]]
 	- [[#Poll]]
 
 ---
@@ -52,15 +54,25 @@ Slice Modifier
 
 
 ---
-## Creating Custom Addons
+## Creating Custom Addons / Scripts
 
-**NOTE:** To resolver errors in **VSCODE**, Pylance etc. Can pip install fake-bpy-module-latest 
+**NOTE:** To resolver errors in **VSCODE**, Pylance etc. Can `pip install fake-bpy-module-latest `
 ### Process
+- Create a python script (Open that in VSCode as it is easier to code in there).
+- Open the script a scripting window, reload the script here when changed.
+- Ensure that it works as expected
+- Can install permanently from just the script.
+
+
+
 - Create the script in a custom blender scene, make sure it all works as expected
+		Prototype: Start by prototyping the feature that will give you the most immediate benefit in your work.
+		
+		Test: Once you have a working version, test it with your own Blender projects to ensure it works as expected.
 
-Prototype: Start by prototyping the feature that will give you the most immediate benefit in your work.
 
-Test: Once you have a working version, test it with your own Blender projects to ensure it works as expected.
+
+
 
 Package and Market: Once the plugin is ready, you can bundle it and upload it to Gumroad, Blender Market, or even distribute it through GitHub. Make sure to include demo videos, screenshots, and a clear explanation of the plugin's features.
 
@@ -74,7 +86,10 @@ Package and Market: Once the plugin is ready, you can bundle it and upload it to
 - Can register multiple classes
 
 ```python
-classes = [OBJECT_OT_example_operator, VIEW3D_PT_example_panel]
+classes = [
+	OBJECT_OT_example_operator, 
+	VIEW3D_PT_example_panel
+]
 
 def register():
     for cls in classes:
