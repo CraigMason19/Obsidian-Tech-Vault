@@ -9,28 +9,28 @@ Useful shortcuts for [[Blender]]
 ---
 ## General
 
-| Combo                  | Effect                                         |
-| ---------------------- | ---------------------------------------------- |
-| N                      | View Properties Panel                          |
-| T                      | Tools                                          |
-| Tab                    | Edit / Object mode                             |
-| 1, 7, 3                | Front, Top, Right                              |
-| CTRL + (1 / 3 / 7)     | Back, Bottom, Left                             |
-| Z                      | Wireframe                                      |
-| B                      | Box select                                     |
-| C                      | Circle select                                  |
-| CTRL                   | Lasso select                                   |
-| Space                  | Play animation                                 |
-| (CTRL / Shift) + Mouse | Increment                                      |
-| Shift + D              | Duplicate                                      |
-| A                      | Deselect / Select all                          |
-| ALT + A                | Animate                                        |
-| CTRL + A               | Apply (scale)                                  |
-| CTRL + Z               | Render-view                                    |
-| CTRL + Space           | Maximize / Minimize Panel                      |
-| Shift + c              | Show all objects in scene, 3D cursor to origin |
-| F3                     | Search                                         |
-| Alt + z                | Toggle x-ray mode                              |
+| Combo                  | Effect                                                     |
+| ---------------------- | ---------------------------------------------------------- |
+| N                      | View Properties Panel                                      |
+| T                      | Tools                                                      |
+| Tab                    | Edit / Object mode                                         |
+| 1, 7, 3                | Front, Top, Right                                          |
+| CTRL + (1 / 3 / 7)     | Back, Bottom, Left                                         |
+| Z                      | Wireframe                                                  |
+| B                      | Box select                                                 |
+| C                      | Circle select                                              |
+| CTRL                   | Lasso select                                               |
+| Space                  | Play animation                                             |
+| (CTRL / Shift) + Mouse | Increment                                                  |
+| Shift + D              | Duplicate                                                  |
+| A                      | Deselect / Select all                                      |
+| ALT + Q                | When in edit mode, hover over a new object to switch to it |
+| CTRL + A               | Apply (scale)                                              |
+| CTRL + Z               | Render-view                                                |
+| CTRL + Space           | Maximize / Minimize Panel                                  |
+| Shift + c              | Show all objects in scene, 3D cursor to origin             |
+| F3                     | Search                                                     |
+| Alt + z                | Toggle x-ray mode                                          |
 
 ---
 ## Camera
