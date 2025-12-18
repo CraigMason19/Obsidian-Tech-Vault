@@ -8,11 +8,16 @@ Monitors and tracks changes across your files locally. It monitors what was chan
 Not to be confused with [[GitHub]]. Which is a hosting service.
 
 [[#Commands]]
+
 [[#Workflow]]
 - [[#Push, Fetch & Pull]]
 - [[#Branching]]
 - [[#Stashing]]
 - [[#Pull request (PR)]]
+- [[#Forking]]
+- [[#Collaborators]]
+- 
+[[#Basic Workflow For Collaboration]]
 
 ---
 ## Commands
@@ -120,9 +125,86 @@ brings project back to it's previous state
 ---
 ### Pull request (PR)
 
-Ask for permission to bring code from the branch you are working onj  into another branch
+**NOTE:** On [[GitHub]] you can allow `collaborators`. This means that they can add changes to the repository (even private ones) directly.
+
+A way to contribute to someone else repository
+A request to bring in a set of changes into a code base. 
+Also used to bring code from a branch you are working on into another branch.
+
+Someone allowed to accept changes can than review the merge (look for bugs or conflicts) and either accept or reject them.
+
+It's important to review and test your code before asking for it to be committed
+always follow any contribution rules on the original repo
 
 
 
 
-stash & pull request need more info
+**Linking Fork to Upstream**
+
+- On the forked repo (granda’s PC), add your main repo as the upstream remote:
+    
+    bash
+    
+    ```
+    git remote add upstream https://github.com/YourUsername/YourRepo.git
+    ```
+    
+- This lets you pull updates from your main repo into the fork.
+- git fetch upstream
+git merge upstream/main
+
+
+
+
+
+
+---
+### Forking 
+forking a repo on git hub adds a forked copy of the repo to your account. contains a link to the `upstream` (original) repo.
+
+this forked copy is the origin.
+
+this means you can them clone it to your pc to make changes
+
+git push origin (the repo on github)
+
+Allows you to create a clone of someone else's repository, this allows you to modify the contents and open a pull request, 
+
+
+---
+## Basic Workflow For Collaboration
+
+https://www.youtube.com/watch?v=jRLGobWwA3Y&list=WL&index=62
+[CoderDave - How to Review a Pull Request in GitHub the RIGHT Way](https://www.youtube.com/watch?v=lSnbOtw4izI&list=WL&index=62)
+
+
+
+
+### Example
+
+Person **(A)** creates a repository and another person **(B)** want to contribute to it.
+
+**A**'s `repo` is the `upstream` `repo`
+**B**'s `repo` is the `origin` `repo`
+
+Setup:
+- **B** `forks` the `repo` to their own account
+	```git get	```
+- **B** `clones` the `repo` to their own machine & IDE
+
+Changes:
+- **B** `fetches` or `pulls` changes into the local copy. Pull from origin → keeps your fork in sync with itself. Fetch from upstream → keeps your fork aligned with the main repo, but you decide when/how to merge.
+- B rebases?
+- **B** makes any changes as they see fit
+- **B** once happy with their changes
+	- Pushes local commits to the `forked` `repo`
+	- Opens a `PR (pull request)` 
+	- asd
+	- asd
+
+Acceptance:
+	- **A** then decides if this code is correct and acceptable and checks merge conflicts. can decided whats merged
+	- 
+
+
+
