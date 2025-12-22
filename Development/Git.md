@@ -1,4 +1,4 @@
-[Git Website](https://git-scm.com)
+[Git - Website](https://git-scm.com)
 
 - The most popular source control. 
 - Free & Open Source.
