@@ -47,6 +47,13 @@ Allows scripting via [[Python]]
 
 [https://coolors.co/palettes](https://coolors.co/palettes)
 
+---
+
+[[#Light Linking]]
+- [[#Change lighting in the compositor]]
+
+
+
 # Unit Scale
 
 ## Setting up the metric units
@@ -318,3 +325,20 @@ To separate the viewport into 4 views (3 orthographic perspectives, 1 perspectiv
 
   
 **
+
+
+
+
+## Light Linking
+
+Create light groups in `View Layer > Light Groups` (this should be done first)
+
+For a light go to `Object Properties > Shading > Light Group
+
+### Change lighting in the compositor
+
+- Set each light you want to split into its own light group
+- These layers will then show in the render passes which can be changed via nodes in the compositor
+
+
+ 
