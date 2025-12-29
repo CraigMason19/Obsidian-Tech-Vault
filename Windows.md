@@ -1,3 +1,4 @@
+[[#mklink]]
 
 ## Add create new file to context menu
 
@@ -31,4 +32,15 @@ cd foo
 notepad bar.md
 ```
 
+---
+## mklink
 
+```
+Windows thinks it’s still on C:, but the data actually lives elsewhere.
+mklink /J "C:\ProgramData\Arobas Music\Soundbanks" "D:\Guitar Pro 8\Soundbanks"
+
+
+
+C:\Users\Craig>mklink /J "C:\ProgramData\Arobas Music\Soundbanks" "D:\Guitar Pro 8\Soundbanks"
+Junction created for C:\ProgramData\Arobas Music\Soundbanks <<===>> D:\Guitar Pro 8\Soundbanks
+```
