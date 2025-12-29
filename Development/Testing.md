@@ -14,6 +14,8 @@ Helps prevent bugs and makes refactoring much easier / safer.
 - [[#C Sharp Example]]
 - [[#Python Example]]
 
+[[#Coverage]]
+
 ---
 ## Types
 
@@ -164,5 +166,38 @@ class TestExtra(TestBase):
         full_name = f"{self.first_name} {self.last_name}"
         self.assertEqual(full_name, "Craig Mason")
 ```
+
+Example of how to write tests with Errors.
+
+```python
+	# Test error happens
+    def test_letters_frequency_invalid_key_rasises_value_error(self):
+        with self.assertRaises(ValueError):
+            letters.LetterFrequency.percentage("invalid_key")
+            
+    # Test error doesn't happen
+    def test_letters_frequency_upper_and_lower_doesnt_rasise_value_error(self):
+        try:
+            a = letters.LetterFrequency.percentage("e")
+            b = letters.LetterFrequency.percentage("E")
+        except ValueError:
+            self.fail("ValueError was raised unexpectedly")
+```
+---
+## Coverage
+
+Allows you to see which parts of the code are tested / covered. However, a 100% coverage might mean that you haven't tested everything (edge-cases etc).
+
+In Python
+
+```python
+# Note - I installed globally on my machine so it's available for all projects
+pip install coverage
+
+# Then in terminal
+python -m coverage run -m unittest discover [test folder]
+
+python -m coverage html
+``` 
 
 ---
