@@ -1,5 +1,7 @@
 A Regular Expression is a sequence of characters that specifies a match pattern in text.
 
+A very good use case for AI
+
 [Online RegEx](https://regexr.com)
 [Python Regex](https://www.w3schools.com/python/python_regex.asp)
 [JavaScript RegEx](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)
