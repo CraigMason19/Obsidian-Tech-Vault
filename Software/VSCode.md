@@ -49,7 +49,7 @@ Run code . in terminal to open the folder in VSCode
 
 
 
-## Extensions
+## Extensions I Use
 
 - Live server
 - Code Runner

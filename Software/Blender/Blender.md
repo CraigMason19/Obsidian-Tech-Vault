@@ -4,7 +4,10 @@ An open source program for 3D modelling & rendering.
 
 Allows scripting via [[Python]]
 
+[Blender Launcher](https://victor-ix.github.io/Blender-Launcher-V2/) 
+- (Used to download and manage versions)
 
+---
 ## Useful links
 
 ### Models
