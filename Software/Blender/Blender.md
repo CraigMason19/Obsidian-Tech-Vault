@@ -4,8 +4,22 @@ An open source program for 3D modelling & rendering.
 
 Allows scripting via [[Python]]
 
+---
+
 [Blender Launcher](https://victor-ix.github.io/Blender-Launcher-V2/) 
 - (Used to download and manage versions)
+
+[[#Useful links]]
+- [[#Models]]
+- [[#Images & textures]]
+- [[#Other]]
+- [[#Tutorials]]
+	- [[#Shorts]]
+
+[[#Unit Scale]]
+
+[[#Light Linking]]
+- [[#Change lighting in the compositor]]
 
 ---
 ## Useful links
@@ -50,28 +64,24 @@ Allows scripting via [[Python]]
 
 [https://coolors.co/palettes](https://coolors.co/palettes)
 
+### Tutorials
+
+#### Shorts
+- [SouthernShotty - Colored light falloff](https://www.youtube.com/watch?v=qc5KlGvOlVY&list=WL&index=70&pp=iAQBsAgC)
+
+
 ---
-
-[[#Light Linking]]
-- [[#Change lighting in the compositor]]
-
-
-
 # Unit Scale
 
 ## Setting up the metric units
 
 There are 3 types of unit measurements in Blender
 
-
 - "None" represents simple 'unit' based measurement.
 - "Metric" represents "millimetres", "meters" etc.
 - "Imperial" represents "inches", "foot", "mile" etc.
 
-  
-
 Metric units are the default standard of measurement in 3D printing. So switching to “Metric” units in “Properties Window > Scene > Units > Length” sets the base unit to "1 Meter" and "Scale: 1.000" this means;
-
   
 - 0.001 = 1mm (one millimeter)
 - 0.010 = 1cm (one centimetre)
@@ -79,7 +89,7 @@ Metric units are the default standard of measurement in 3D printing. So switchin
 - 1.000 = 1m (one metre)
 - 1000.000 = 1km (one kilometre)
 
-
+---
 ## Bambu Mini A1
 
 - Scene properties
