@@ -8,6 +8,7 @@ Contents
 - [[#is_empty_or_whitespace]]
 - [[#Mixin]]
 - [[#Virtual Environments]]
+	- [[#Requirements]]
 - [[#args & kwargs]]
 - [[#Modules / Packages]]
 - [[#Type Hinting]]

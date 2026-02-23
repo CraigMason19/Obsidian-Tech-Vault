@@ -24,7 +24,13 @@ In Sourcetree
 - Stage all and type, Initial commit
 
 ---
+## Restoring a project
 
+When my hard drive failed I had to restore a project, possible due to GitHub. 
+
+In source tree, Just clone the project.
+
+---
 ## Fixes
 ---
 ### FIX - Can't log in to push onto [[GitHub]]
