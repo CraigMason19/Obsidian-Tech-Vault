@@ -17,6 +17,7 @@ Allows scripting via [[Python]]
 	- [[#Shorts]]
 
 [[#Unit Scale]]
+[[#Bambu Mini A1]]
 
 [[#Light Linking]]
 - [[#Change lighting in the compositor]]
@@ -100,7 +101,9 @@ Metric units are the default standard of measurement in 3D printing. So switchin
 Now in blender every meter will be a a mm on the plate. 
 E.g. In blender a cube of 10 x 10 x 10 will be a 1cm cube. 
 
+**NOTE:** By default, not doing anything blender 1 unit is 1mm
 
+---
 
 
 
