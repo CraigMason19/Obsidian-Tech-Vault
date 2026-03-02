@@ -5,6 +5,9 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 ---
 ## Useful Plugins
 
+- K-Tools - Mode Highlight
+	- Allows you to easily see which mode you are by changing the tool bar colour.
+
 Extra Meshes
 
 BLAM - Camera perspective setup
