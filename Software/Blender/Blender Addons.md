@@ -8,6 +8,9 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 - K-Tools - Mode Highlight
 	- Allows you to easily see which mode you are by changing the tool bar colour.
 
+- [Distribute](https://www.youtube.com/watch?v=4sMclQJ8Nws&list=WL&index=57)
+	- Easily distribute / space items on a specific axis. 
+
 Extra Meshes
 
 BLAM - Camera perspective setup
