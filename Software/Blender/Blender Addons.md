@@ -11,6 +11,9 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 - [Distribute](https://www.youtube.com/watch?v=4sMclQJ8Nws&list=WL&index=57)
 	- Easily distribute / space items on a specific axis. 
 
+- Quick J (Connect Vertex Path)
+	- Improved joining for vertices
+
 Extra Meshes
 
 BLAM - Camera perspective setup
