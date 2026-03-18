@@ -1,24 +1,31 @@
-[JSON Place Holder](https://jsonplaceholder.typicode.com)
+Application Programming Interface
+
+- A way of interacting with a Service (Google, Spotify, ...) via requests and responses.
 
 [[#Requests]]
 [[#Routes]]
-[[#Secrets]]
-
-[[#API's]]
+[[#Status Codes]]
 
 
-FETCH -> the **modern, built-in** JS way to make HTTP requests. then you determine what type of request it is and how to handle it
-
+Resources
+- [JSON Place Holder](https://jsonplaceholder.typicode.com)
+	- Free fake and reliable API for testing and prototyping
+- [[#Useful API's]]
 
 ---
 ## Requests
 
-1. GET retrieves data.
-2. POST creates data.
-3. PUT updates data entirely.
-4. PATCH allows partially updating data.
-5. DELETE removes data.
+Requests are HTTP Methods for interacting with a Server.
 
+FETCH -> the **modern, built-in** JS way to make HTTP requests. then you determine what type of request it is and how to handle it
+
+| Request Type | Description            |
+| ------------ | ---------------------- |
+| GET          | Retrieves data         |
+| POST         | Creates data           |
+| PUT          | Entirely updates data  |
+| PATCH        | Partially updates data |
+| DELETE       | Removes data           |
 
 ---
 ## Routes
@@ -35,23 +42,27 @@ Below is an example of how to document routes used for an API
 | DELETE | /posts/1           |
 
 ---
-## Secrets
 
-Some variables we don't to be in our GitHub repositories OR our release. e.g. (An API key, passwords)
-### C Sharp
+## Status Codes
 
-[Time Corey YT](https://www.youtube.com/watch?v=z7w-aheVrC4&list=WL&index=36&t=444s)
+[HTTP response status codes list](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
 
-C# -> Manage User Secrets (will create a new JSON file NOT in the current directory)
+Requests can return codes to let you know if something went wrong or succeeded.
 
-### Python
+There are many but these are the most useful / common ones.
 
-DotEnv is a very popular pip 
-
-[Corey Schafer YT - DotEnv](https://www.youtube.com/watch?v=PYuTzLswn_Y&list=WL&index=36)
+| Code | Description           |
+| ---- | --------------------- |
+| 200  | OK                    |
+| 201  | Resource Created      |
+| 400  | Bad Request           |
+| 401  | Unauthorized          |
+| 404  | Not Found             |
+| 405  | Method Not Allowed    |
+| 500  | Internal Server Error |
 
 ---
-## API's
+## Useful API's
 
 ### Free
 
