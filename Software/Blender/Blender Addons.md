@@ -12,7 +12,13 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 	- Easily distribute / space items on a specific axis. 
 
 - Quick J (Connect Vertex Path)
-	- Improved joining for vertices
+	- Improved joining for vertices.
+
+- [3D Cursors Briefcase](https://extensions.blender.org/add-ons/c3db/)
+	- Allows you to define multiple 3D Cursors and quickly switch between them.
+	- [Vaul](https://www.youtube.com/watch?v=U97W220Faz4&list=WL&index=61)
+
+
 
 Extra Meshes
 
