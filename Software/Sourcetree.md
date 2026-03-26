@@ -5,6 +5,7 @@ A free [[Git]] GUI client for windows and mac.
 Allows you to interact with [[Git]] through a user interface.
 
 [[#Create a new Project]]
+[[#Restoring a project]]
 
 [[#Fixes]]
 - [[#FIX - Can't log in to push onto GitHub]]
@@ -28,7 +29,9 @@ In Sourcetree
 
 When my hard drive failed I had to restore a project, possible due to GitHub. 
 
-In source tree, Just clone the project.
+In source tree, Just clone the project into an empty folder. 
+
+Some reconstruction (e.g virtual environments, packages, etc...) may be required. This is why having frozen requirements and good readme's is important. 
 
 ---
 ## Fixes
