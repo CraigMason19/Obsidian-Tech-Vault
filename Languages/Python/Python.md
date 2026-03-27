@@ -369,6 +369,7 @@ print(f'Result -> {"hello":<10}...') # 'Result -> hello     ...'
 print(f'Result -> {"hello":^10}...') # 'Result ->   hello   ...'
 print(f'Result -> {"hello":>10}...') # 'Result ->      hello...'
 
+# Fill
 print(f'Result -> {"hello":_^10}...') # 'Result -> __hello___...'
 ```
 ### Dynamic Formatting
