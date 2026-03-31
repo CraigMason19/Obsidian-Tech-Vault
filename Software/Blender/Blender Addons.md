@@ -18,6 +18,14 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 	- Allows you to define multiple 3D Cursors and quickly switch between them.
 	- [Vaul](https://www.youtube.com/watch?v=U97W220Faz4&list=WL&index=61)
 
+- [ND - Non-Destructive Modelling Toolkit](https://extensions.blender.org/add-ons/nd/)
+	- Adds new operators and tools for a faster workflow
+	- [YT - Deep Dive](https://www.youtube.com/playlist?list=PLZmp_NXXf0kDbUfuukIPoQQh3SVECBf2r)
+	- [[Blender Addons Usage#ND]]
+
+
+
+
 
 
 Extra Meshes
