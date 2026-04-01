@@ -5,13 +5,12 @@ Used to set out the style of the page or entire websites.
 Links
 - [UI Gradient designer](https://cssgradient.io)
 
+Tutorials / References 
+- [Bro Code YT - Learn CSS in 1 Hour](https://www.youtube.com/watch?v=wRNinF7YQqQ&list=WL&index=2)
+- [24 CSS Projects](https://www.youtube.com/watch?v=TzuWIHGFKCQ)
+- [Slaying The Dragon YT - Media Queries](https://www.youtube.com/watch?v=K24lUqcT0Ms&list=WL&index=38&t=50s)
+- [Dynamic textareas](https://www.youtube.com/watch?v=ElELqkwzcYM&list=WL&index=47)
 
- 
-[Bro Code YT - Learn CSS in 1 Hour](https://www.youtube.com/watch?v=wRNinF7YQqQ&list=WL&index=2)
-[24 CSS Projects](https://www.youtube.com/watch?v=TzuWIHGFKCQ)
-[Slaying The Dragon YT - Media Queries](https://www.youtube.com/watch?v=K24lUqcT0Ms&list=WL&index=38&t=50s)
-
-[Dynamic textareas](https://www.youtube.com/watch?v=ElELqkwzcYM&list=WL&index=47)
 
 [[#CSS Reset]]
 [[#Chained Class selector]]
@@ -19,19 +18,22 @@ Links
 [[#Units]]
 [[#Z-Index]]
 [[#constants.css & Imports]]
-
 [[#Icons]]
 - [[#Ionicons]]
-
 [[#Media Queries]]
 
 ---
 ## CSS Reset
 
-A common technique used because different browsers use different default margins.
-- Causes sites to look different by margins. 
-- The * means "all elements" (a universal selector)
+A common technique used because different browsers use different default margins. This difference in margins causes sites to look different so reset it to 0 to start from a clean base. 
+- The `*` means "all elements" (a universal selector)
 - So we are setting all elements to have zero margins, and zero padding, thus making them look the same in all browsers. 
+
+`bordor-box` changes how the browser calculates an elements total width and height. For example...
+
+If you have a element with a width of 100 and a padding of 10 pixels...
+- Without, the total width becomes 120px (100 + 10 on each side).
+- With, the padding will be taken from inside that width of 100px (80 + 10 on each side).
 
 ```css
 /* CSS reset
@@ -42,6 +44,7 @@ A common technique used because different browsers use different default margins
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
+    box-sizing: bordor-box;
 }
 ```
 
