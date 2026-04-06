@@ -18,6 +18,7 @@ Allows scripting via [[Python]]
 
 [[#Unit Scale]]
 [[#Bambu Mini A1]]
+[[#Assets]]
 
 [[#Light Linking]]
 - [[#Change lighting in the compositor]]
@@ -104,8 +105,25 @@ E.g. In blender a cube of 10 x 10 x 10 will be a 1cm cube.
 **NOTE:** By default, not doing anything blender 1 unit is 1mm
 
 ---
+## Assets
+
+To add assets to the asset library you need to set the file path. `Edit > Preferences > File Paths`
+
+I like to keep MY assets separate from other peoples, separate folders can be set to specific folders or you can just leave the files in the `Assets_Others` folder (for Misc stuff).
+
+```
+# Example setup on Hard-Drive
+
+Blender Resources
+	- Assets
+	- Assets_Others
+		- Mechanical Creature Kit Free
+		- The Plant Library
+		- Crafty Asset Pack
+```
 
 
+---
 
 ## Scanning and then printing images 1:1
 
