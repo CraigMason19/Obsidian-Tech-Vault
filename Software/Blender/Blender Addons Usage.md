@@ -15,13 +15,15 @@
 ---
 ## Snap measure
 
-| Combo                                   | Effect                             |
-| --------------------------------------- | ---------------------------------- |
-| CTRL + SHIFT + V                        | Enter measure mode                 |
-| CTRL + SHIFT + ALT + V                  | **CUSTOM BINDING** - Open Pie Menu |
-| (In mode)                               | ALT to change lines                |
-| (In mode) + Hover over any midpoint + Q | Snap measure pie menu              |
-#### Change Bevel Radius
+| Combo                                          | Effect                             |
+| ---------------------------------------------- | ---------------------------------- |
+| CTRL + SHIFT + V                               | Enter measure mode                 |
+| (In mode) + ALT                                | Change points                      |
+| (In mode) + ALT + (Hover over midpoint) + LMB  | Select Line                        |
+| (In mode) + ALT + (Hover over any point) + RMB | Delete Line                        |
+| (In mode) + ALT + (Hover over any point) + Q   | Snap measure pie menu              |
+| CTRL + SHIFT + ALT + V                         | **CUSTOM BINDING** - Open Pie Menu |
+### Change Bevel Radius
 
 - Bevel edge as normal
 - In Snap measure n-panel, click bevel
@@ -37,5 +39,14 @@
 | ALT + S   | Opens the ND Sketch menu | - Reset scale                                                                                     |
 | F         | Opens Fast menu          | - F is `focus` in `machine3` tools<br>- F is make face in vertex mode. Now have to press it twice |
 | ALT + V   | Opens ND Viewport menu   |                                                                                                   |
+### Separate into a new object 
 
+In vanilla the work flow is
+- Select what you want to separate -> `SHIFT + D` (duplicate) -> `P` -> selection
+
+ND has another workflow but you must be in object mode
+- Sketch menu -> geo-lift
+  
+ I have it on quick favourites
+ 
 ---
