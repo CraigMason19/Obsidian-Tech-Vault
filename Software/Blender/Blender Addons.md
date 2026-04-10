@@ -23,6 +23,11 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 	- [YT - Deep Dive](https://www.youtube.com/playlist?list=PLZmp_NXXf0kDbUfuukIPoQQh3SVECBf2r)
 	- [[Blender Addons Usage#ND]]
 
+-  [Modifier List](https://extensions.blender.org/add-ons/modifier-list-fork/)
+	- Changes the modifier list to the old style
+	- Shows modifiers as a list but can also be shown as a stack
+	- Can be set to show the time to compute overall and for each modifier
+
 
 
 
