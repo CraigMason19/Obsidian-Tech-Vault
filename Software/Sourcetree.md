@@ -47,8 +47,8 @@ Some reconstruction (e.g virtual environments, packages, etc...) may be required
 
 1. Navigate to C:\\Users\\_**UserName**_\\AppData\\Local\\Atlassian
 2. Under there, you will see SourceTree.exe_Url__**RandomGuid**_
-3. Delete all of those style folders so you are only left with one folder called SourceTree
-4. Start SourceTree, and it will rebuild that settings file.
+3. Delete all of those style folders so you are only left with one folder called Sourcetree
+4. Start Sourcetree, and it will rebuild that settings file.
 
 ----
 
