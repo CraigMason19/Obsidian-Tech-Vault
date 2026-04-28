@@ -14,6 +14,7 @@ Contents
 - [[#Type Hinting]]
 - [[#Docstrings]]
 - [[#F-Strings]]
+- [[#Decorators]]
 
 ---
 ## is_empty_or_whitespace
@@ -392,5 +393,96 @@ print(f'{x = } {y = }') # x = 'Hello' y = 'Craigy'
 
 print(f'{len(x)=} {len(y)=}') # len(x)=5 len(y)=6
 ```
+
+---
+## Decorators
+
+A means to "wrap" a function; to give it extra functionality without changing the function itself.
+
+Basic decorator declaration:
+
+```python
+import functools
+
+def decorator_name(func):
+	@functools.wraps(func) # copies metadata from the original function:
+    def wrapper(*args, **kwargs):
+		# Code here...
+	    return func(*args, **kwargs)
+	    
+    return wrapper
+    
+@decorator_name
+def foo():
+	pass
+```
+
+A decorator that does work after the wrapped function:
+
+```python
+def a(func):
+    def wrapper(*args, **kwargs):
+        print("Before")
+        result = func(*args, **kwargs)
+        print("After")
+        return result
+    return wrapper
+```
+### Multiple decorators
+
+Functions can have multiple decorators that wrap up the function from the bottom up
+
+```python
+import functools
+
+def a(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        print("Executed a decorator...")
+        func(*args, **kwargs)
+        
+    return wrapper
+
+def b(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        print("Executed b decorator...")
+        func(*args, **kwargs)
+        
+    return wrapper
+
+@a
+@b
+def sum(a, b):
+    a + b
+
+x = sum(10, 15)
+print(x)
+
+# Executed a decorator...
+# Executed b decorator...
+# 25
+```
+
+In this example `sum` gets translated to `a(b(sum))`
+
+- a wrapper  
+	- b wrapper  
+		- sum func
+
+**NOTE:**  Decorators are `Wrapped bottom-up` but `Executed top-down`
+
+**Decoration time**
+- b is wrapped first
+	- a is wrapped second
+
+**Call time** (when you run `sum(...)`):
+- a is executed first
+	- b is executed second
+
+'Pass the parcel' analogy
+- A toy is wrapped in paper layer b then paper layer a
+- When the game is played paper layer a is opened first and then paper layer b
+- The toy is reached. (original function)
 
 ---
