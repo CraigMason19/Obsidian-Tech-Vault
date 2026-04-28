@@ -7,8 +7,16 @@ Has multiple extension support
 
 Run code . in terminal to open the folder in VSCode
 
----
+[[#Keyboard shortcuts]]
+- [[#General]]
+- [[#Custom]]
+- [[#Lines]]
+- [[#Tabs & Panels]]
 
+[[#Extensions]]
+
+
+---
 ## Keyboard shortcuts
 
 ### General
@@ -25,10 +33,18 @@ Run code . in terminal to open the folder in VSCode
 | CTRL + ALT + (UP / DOWN)      | Same as CTRL + ALT for lines above and below         |
 | SHIFT + ALT + (LEFT / RIGHT)  | Expand / shrink selection                            |
 ### Custom
+
+Just a list of commands that I like to use.
+
+Command palette > keyboard shortcuts
+- Can also search for key combinations
+
 | Shortcut     | Behaviour                            |
 | ------------ | ------------------------------------ |
 | ALT + S      | Order selected lines alphabetically  |
 | CTRL + SPACE | Toggle zen mode so it's like blender |
+| F5           | Run Code                             |
+| CTRL + F5    | Debug: Start Debugging               |
 ### Lines
 | Shortcut             | Behaviour                    |
 | -------------------- | ---------------------------- |
@@ -44,12 +60,8 @@ Run code . in terminal to open the folder in VSCode
 | CTRL + NUMBER               | Switch panel view               |
 | CTRL + F4                   | Close open file                 |
 
-
-
-
-
-
-## Extensions I Use
+---
+## Extensions
 
 - Live server
 - Code Runner
