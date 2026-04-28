@@ -18,3 +18,6 @@ To edit the Thunderbird CSS, you need to modify `userChrome.css` or `userContent
 
 **To find which element to change**
 - Go into `Developer Tools (CTRL + SHIT + I)` and in the top left there as button that allows you to choose the element in the app
+
+## Filters
+Under Tools > Message Filters
