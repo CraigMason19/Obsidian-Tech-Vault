@@ -2,7 +2,7 @@
 
 A scripting language that allows you to implement complex features on web pages.
 
-Can write JS code in the browser console.
+Can write JS code in the browser console. Single Threaded.
 
 JavaScript doesn't need the semi colon but it's good practice. Like a full stop on a sentence.
 
@@ -26,18 +26,22 @@ JavaScript doesn't need the semi colon but it's good practice. Like a full stop 
 - [[#Numbers]]
 	- [[#BigInt]]
 
-[[#== vs ===]]
-[[#Optional chaining]]
-[[#Nullish coalescing operator]]
-[[#Decimal Places]]
-[[#Exceptions]]
-[[#const, let & var]]
-[[#Generators]]
-[[#Private Methods]]
-[[#Imports / Exports]]
-[[#Comments]]
-[[#Dictionaries]]
+Language
+- [[#== vs ===]]
+- [[#Optional chaining]]
+- [[#Nullish coalescing operator]]
+- [[#Decimal Places]]
+- [[#Exceptions]]
+- [[#const, let & var]]
+- [[#Generators]]
+- [[#Private Methods]]
+- [[#Imports / Exports]]
+- [[#Comments]]
+- [[#Dictionaries]]
+
 [[#DOMContentLoaded]]
+[[#Event Loop]]
+[[#Promises]]
 [[#JSDoc]]
 
 ---
@@ -437,6 +441,97 @@ document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed.");
 });
 ```
+
+---
+# Event Loop
+
+[The JavaScript Event Loop Explained with Examples](https://medium.com/@ignatovich.dm/the-javascript-event-loop-explained-with-examples-d8f7ddf0861d)
+
+
+
+
+---
+## Promises
+
+However more complex tasks like talking to an API or Database over the Internet might take much longer (traffic, read speed, etc...) They will often not return the result straight away but will return a promise. 
+
+In [[JavaScript]] (A promise is an Object representing the eventually completion or failure of an asynchronous operation and it's value)
+
+NOTE: Also See 
+
+```javascript
+// Handle fulfilled (resolved) promises
+promise.then((result) => { })
+
+// Handle failed (rejected) promises
+promise.catch((error) => { })
+
+// May be called before the other errors if they haven't finished
+console.log('Hello world!')
+
+// To solve this we can use the await keyword. Wait for the promise to be completed before going onto the next line. 
+// await must be used in a function marked with the async keyword
+
+async function getSomeAPIData() {
+	try {
+		let response = await request.get('some-url');
+		console.log(response.data.whatever); // Will not be called until the request has finished
+	}
+	catch(error) {
+		console.error(error);
+	}
+}
+```
+
+Another  [Promise example](https://www.youtube.com/watch?v=RvYYCGs45L4&list=WL&index=15) from [Fireship](https://www.youtube.com/@Fireship)
+
+```Javascript
+const ride = new Promise((resolve, reject) => {
+    const arrived = false;
+
+    if(arrived) {
+        resolve('Driver arrived');
+    }
+
+    else {
+        reject('Driver bailed');
+    }
+});
+
+ride
+    .then(value => {
+        console.log(value);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+    .finally(() => {
+        console.log('All done');
+    });
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 # JSDoc
