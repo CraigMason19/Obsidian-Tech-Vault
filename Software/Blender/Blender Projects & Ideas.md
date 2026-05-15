@@ -15,6 +15,7 @@
 | Space wolf Rhino Diaroma - with snow and smoke / fire. lots of varients fetishes runes and totems                                                                                                                    |
 | Grandads The Thinker                                                                                                                                                                                                 |
 | Minecraft<br>- Have seperate blender files. animals, props, characters etc.. practice rigging / uv for pixels? realistic? use pixels as a mask? Pixel Mask. Scale should be tied to pixel. 1 unit 1 box = 10 pixels? |
+| Spire                                                                                                                                                                                                                |
 |                                                                                                                                                                                                                      |
 
 ---
