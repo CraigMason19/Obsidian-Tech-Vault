@@ -26,7 +26,7 @@ JavaScript doesn't need the semi colon but it's good practice. Like a full stop 
 - [[#Numbers]]
 	- [[#BigInt]]
 
-Language
+Syntax
 - [[#== vs ===]]
 - [[#Optional chaining]]
 - [[#Nullish coalescing operator]]
@@ -356,7 +356,6 @@ console.log(ex.data); // Class Example
 ```
 
 ---
-
 ## Comments
 
 Use the JSDoc standard
@@ -370,9 +369,6 @@ Use the JSDoc standard
  * @throws {Error} If the coordinates are out of bounds.
  */
 ```
-
-
-
 
 ---
 ## Dictionaries
@@ -424,9 +420,6 @@ for (let [key, value] of Object.entries(teams))
 };
 ```
 
-
-
-
 ---
 ## DOMContentLoaded
 
@@ -445,10 +438,50 @@ document.addEventListener("DOMContentLoaded", (event) => {
 ---
 # Event Loop
 
+[The JavaScript Event Loop Explained with Examples](https://dev.to/buildwithgagan/javascript-event-loop-explained-a-beginners-guide-with-examples-4kae)
+[Event Loop in JavaScript](https://www.geeksforgeeks.org/javascript/what-is-an-event-loop-in-javascript/ )
 [The JavaScript Event Loop Explained with Examples](https://medium.com/@ignatovich.dm/the-javascript-event-loop-explained-with-examples-d8f7ddf0861d)
 
+Provides asynchronous behaviour to JS without blocking the main thread. It does this by managing the `callstack`, `macrotask queue` & `microtask queue`.
 
 
+**Order of Execution**
+1. Execute all synchronous tasks on the `callstack`
+2. Process all `microtasks` in the `microtask queue`
+3. Process the first task in the `macrotask` queue
+4. **Repeat**
+
+```js
+console.log('A');  
+  
+setTimeout(() => {  
+	console.log('B'); // Macrotask, with 0ms delay  
+}, 0);  
+  
+Promise.resolve().then(() => {  
+	console.log('C'); // Microtask  
+});  
+  
+console.log('D');
+
+// A, D, C, B
+```
+
+### Microtask Starvation
+
+If a `microtask` schedules another `microtask` you can end up creating an infinite `microtask` chain. Since the event loop must empty the `microtask` queue before continuing, `macrotasks` never get a turn to run. The task queue is ready, but never serviced.
+
+### Blocking the Event Loop
+
+Heavy computations or long-running synchronous operations block the event loop. As a result, no other micro or macro tasks can run, causing the browser to freeze.
+
+```javascript
+setTimeout(() => console.log("Done"), 1000);
+
+while (true) {
+	// Blocks execution, preventing timeout from running
+} 
+```
 
 ---
 ## Promises
@@ -509,29 +542,6 @@ ride
         console.log('All done');
     });
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 # JSDoc
