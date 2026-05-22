@@ -444,6 +444,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 Provides asynchronous behaviour to JS without blocking the main thread. It does this by managing the `callstack`, `macrotask queue` & `microtask queue`.
 
+**Components**
+
+- Callstack
+	- The synchronous script (**Global Execution Context**)
+	- Runs first.
+	- Can block the Event Loop
+
+- Microtask queue
+	- Handles things such as [[#Promises]]
+	- Higher priority than the `macrotask` queue
+
+- Macrotask Queue / Callback Queue
+	- Handles Things such as Web API's, DOM events, HTTP requests, etc...
 
 **Order of Execution**
 1. Execute all synchronous tasks on the `callstack`
