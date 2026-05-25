@@ -63,9 +63,3 @@ Asking AI to summarise something that may have already been summarised is essent
 - People think they can create, where really they produce a amalgamation other creators made for you. Midjourney did that from others art
 
 ---
-
-
-
-
-
-
