@@ -1,10 +1,11 @@
-#language
+#language | [[Docstrings]] | [[QT Designer]]
 
 Uses [[Typing#Duck Typing]]
 
 [Python Package Index](https://pypi.org) - Finds packages to install
 
 Contents
+- [[#Mutable Defaults]]
 - [[#is_empty_or_whitespace]]
 - [[#Mixin]]
 - [[#Virtual Environments]]
@@ -15,6 +16,35 @@ Contents
 - [[#Docstrings]]
 - [[#F-Strings]]
 - [[#Decorators]]
+
+---
+## Mutable Defaults
+
+In function calls Python only creates defaults once. This means any `mutable` type will be shared between function calls. 
+Instead use `None` as the default value.
+
+```python
+def add_to_list(item, item_list=[]):
+    item_list.append(item)
+    return item_list
+
+print(add_to_list(3)) # [3, 'bar']
+print(add_to_list("bar")) # [3, 'bar']
+
+
+def add_to_list_improved(item, item_list=None):
+    """
+    If we don't provide a list to modify, create a new one
+    """
+    if item_list is None:
+        item_list = []
+        
+	item_list.append(item)
+    return item_list
+
+print(add_to_list_improved(3)) # [3]
+print(add_to_list_improved("bar")) # ['bar']
+```
 
 ---
 ## is_empty_or_whitespace
