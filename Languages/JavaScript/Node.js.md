@@ -19,25 +19,31 @@ Pros
 - Can use the same language on front / back end (JavaScript)
 - Large community & 3rd party packages
 
+---
 
 
-
+[[#Installation]]
+[[#Commands]]
+[[#Imports]]
 [[#Core Modules]]
 	- [[#OS]]
 	- [[#File System]]
 
 
 
-
+---
 ## Installation
 
 Installed by downloading the exe from [node.js](https://nodejs.org/en)
-## Commands
 
+---
+## Commands
 
 | node -v | Check if it is installed and version |
 | ------- | ------------------------------------ |
 |         |                                      |
+
+---
 
 nmv - node version manager
 
@@ -69,6 +75,7 @@ console.log(p) // { names: [ 'Craig', 'John', 'Jane' ] }
 console.log(p.names) // [ 'Craig', 'John', 'Jane' ]
 ```
 
+---
 ## Core Modules
 
 ## OS
