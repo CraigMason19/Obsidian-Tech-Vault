@@ -1,12 +1,17 @@
 **Node Package Manager**
 
-A library and registry for [[JavaScript]] software packages.
+A library and registry for [[JavaScript]] software packages. (Similar to Python's PIP)
+
+[[#Testing With A Simple Package]]
+
+[[#Useful Packages]]
+- [[#Lodash]]
 
 ---
 
 [YT - What is NPM, and why do we need it?](https://www.youtube.com/watch?v=P3aKRdUyr0s&list=WL&index=46&t=6s)
 
-will be installed along with [[Node.js]]
+will be installed along with [[Node.js]] (seperate tools, bundled together)
 
 allows you to install remote packages to use in your own code
 
@@ -17,6 +22,7 @@ A library and registry for [[JavaScript]] software packages.
 
 npm install express
 will install locally unlike python whivh is global and you have to use .venv.
+will be in a node_modules folder
 
 to instal globally use the npm -g flag
 
@@ -65,6 +71,7 @@ npm install // install all dependencies, dev packages and other packages
 
 
 
+```
 // Install a package
 npm i <packageName>
 // Install a specific version of a package
@@ -80,7 +87,38 @@ npm outdated
 // Update packages
 npm update 
 
-
+```
 
 nodemon
-- watches files and auto reloads them so you dont have to keep re running 
+watches files and auto reloads them so you dont have to keep re running 
+
+---
+## Testing With A Simple Package
+
+To make sure everything is connected you can install small packages like `is-even` or [[#Lodash]].
+### is-even
+
+`npm install is-even`
+
+```js
+import isEven from "is-even";
+
+console.log(isEven(4));
+```
+
+---
+## Useful Packages
+
+### Lodash
+
+[Lodash](https://lodash.com) is a JavaScript library which provides useful utility functions
+
+`npm install lodash`
+
+```js
+import _ from "lodash";
+
+console.log(_.shuffle([1, 2, 3, 4]));
+```
+
+---
