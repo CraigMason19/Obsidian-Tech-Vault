@@ -24,6 +24,7 @@ Pros
 
 [[#Installation]]
 [[#Commands]]
+[[#Hello World]]
 [[#Imports]]
 [[#Core Modules]]
 	- [[#OS]]
@@ -54,6 +55,25 @@ in browser window is the global object in node.js there is a global which is ass
 e.g. ```document.querySelector()``` 
 -> not in the global object it is in window
 
+---
+## Hello World
+
+Create a new JS file and add the code below
+
+```js
+const HTTP = require('http');
+const PORT = 8080;
+
+HTTP.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end('Hello Craig!');
+}).listen(PORT);
+```
+
+- In a terminal run `node foo.js`
+- Go to http://localhost:8080
+
+---
 ## Imports
 
 **Node.js-specific** due to the usage of the `module.exports` and `require` syntax, which are part of Node.js's **CommonJS** module system
