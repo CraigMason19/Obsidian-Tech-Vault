@@ -1,5 +1,8 @@
 #projects [[Blender]]
 
+[[#Addon Ideas]]
+- [[#Render Variance]]
+
 | **3D Renders**                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Dr Who Render                                                                                                                                                                                                        |
@@ -30,12 +33,12 @@ Combining light levels. Mixing Night and Day
 - https://www.youtube.com/watch?v=6PKTAeaq_70&list=WL&index=33&pp=iAQBsAgC
 
 ---
-## Addons
+## Addon Ideas
 - render-slot-manager / render-slots-saver
-- render-variance / render-setting-variance
+- [[#Render Variance]]
 
 ---
-## Render Variance 
+### Render Variance 
 render-setting-variance
 
 The process of adjusting lighting, re-rendering, and repeatedly tweaking can be a real pain, especially when trying to get that perfect balance of brightness or exposure.
@@ -284,3 +287,11 @@ This approach could be useful for things like:
 This kind of workflow is perfect for quick iteration and comparison when you're trying to fine-tune a single parameter.
 
 Would this be the right approach? Or do you see it being useful for only certain types of parameters (like light or particles)?
+
+---
+
+### 3d printing duplicator
+
+Copy all objects and put them into the scene collection, apply modifiers and then join
+
+
