@@ -2,6 +2,7 @@
 
 [[#Addon Ideas]]
 - [[#Render Variance]]
+- [[#Collection to Mesh]]
 
 | **3D Renders**                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -289,9 +290,31 @@ This kind of workflow is perfect for quick iteration and comparison when you're 
 Would this be the right approach? Or do you see it being useful for only certain types of parameters (like light or particles)?
 
 ---
+### Collection to Mesh
+ 
+3d printing duplicator? So i can keep a copy with modifiers and separate parts to model easily.
 
-### 3d printing duplicator
+Copy all objects in a collection and put them into the scene collection, apply modifiers and then join. Then I can export that joined version as a stl. 
 
-Copy all objects and put them into the scene collection, apply modifiers and then join
+
+- Pick a **Collection**
+- Duplicate all objects inside it
+- Move duplicates to the **Scene Collection**
+- Optionally **apply modifiers**
+- Optionally **apply scale**
+- **Join** everything into one mesh
+- Leave the original collection untouched
+- Export manually as STL afterward
+
+
+Collection Joiner / Collection copier
+
+Panel
+
+Collection [           ]
+Apply Modifiers [x]
+Apply Scale [x]
+joined_name [colection_name_joined]
+Join Button
 
 
