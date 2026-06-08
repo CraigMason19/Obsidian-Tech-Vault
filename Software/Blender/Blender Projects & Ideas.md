@@ -294,7 +294,9 @@ Would this be the right approach? Or do you see it being useful for only certain
  
 3d printing duplicator? So i can keep a copy with modifiers and separate parts to model easily.
 
-Copy all objects in a collection and put them into the scene collection, apply modifiers and then join. Then I can export that joined version as a stl. 
+Copies all objects in a collection and places them into the scene collection, apply modifiers and then join. 
+
+Allows me to Then I can export that joined version as a stl. 
 
 
 - Pick a **Collection**
