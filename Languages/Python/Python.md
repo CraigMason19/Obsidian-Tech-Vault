@@ -10,6 +10,7 @@ Contents
 - [[#Mixin]]
 - [[#Virtual Environments]]
 	- [[#Requirements]]
+- [[#CLI arguments]]
 - [[#args & kwargs]]
 - [[#Modules / Packages]]
 - [[#Type Hinting]]
@@ -157,6 +158,53 @@ Run windows powershell as administrator
 if pip list fails… → Fatal error in launcher: Unable to create process using
 
 >>> python -m pip install --upgrade pip
+```
+
+---
+## CLI arguments
+
+Command-line arguments (or CLI arguments)
+### sys.argv
+
+This is a list of everything you type after `python script.py`. For Example, `python clis_sum.py 10 20 30`
+
+NOTES:
+- sys.argv[0] is the script name
+- sys.argv[1:] are the arguments you pass
+- The values passed are always strings so may need to be converted
+
+```python
+# cli_sum.py
+import sys
+
+numbers = [int(x) for x in sys.argv[1:]]
+
+print(numbers, "->", sum(numbers))
+```
+
+### Argparse
+
+This allows you pass variables through as names.
+
+`python cli.py --display`
+
+```python
+#cli.py
+import argparse
+
+parser = argparse.ArgumentParser()
+
+# Will be false by default unless --display is passed
+parser.add_argument("--display", action="store_true")
+args = parser.parse_args()
+
+
+print("Display: ", args.display)
+
+if(args.display):
+    print("--display flag was passed.")
+else:
+    print("--display flag was not passed.")
 ```
 
 ---
