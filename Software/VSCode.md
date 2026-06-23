@@ -39,12 +39,12 @@ Just a list of commands that I like to use.
 Command palette > keyboard shortcuts
 - Can also search for key combinations
 
-| Shortcut     | Behaviour                            |
-| ------------ | ------------------------------------ |
-| ALT + S      | Order selected lines alphabetically  |
-| CTRL + SPACE | Toggle zen mode so it's like blender |
-| F5           | Run Code                             |
-| CTRL + F5    | Debug: Start Debugging               |
+| Shortcut     | Behaviour                            | Command ID                       |
+| ------------ | ------------------------------------ | -------------------------------- |
+| ALT + S      | Order selected lines alphabetically  | editor.action.sortLinesAscending |
+| CTRL + SPACE | Toggle zen mode so it's like blender |                                  |
+| F5           | Run Code                             |                                  |
+| CTRL + F5    | Debug: Start Debugging               |                                  |
 ### Lines
 | Shortcut             | Behaviour                    |
 | -------------------- | ---------------------------- |
