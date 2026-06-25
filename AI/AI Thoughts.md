@@ -8,6 +8,9 @@ This is not mine, but a brilliant quote...
 It's a mediocrity machine by default, attempting to bend everything it touches toward a mathematical average. Using extraordinary amounts of resources, it has the ability to create something good enough, a squint-and-it-looks-right simulacrum of normality. If you don't care, it's miraculous. If you do, the illusion falls apart pretty quickly. The fact that the userbase for AI chatbots has exploded exponentially demonstrates that good enough is, in fact, good enough for most people. Because most people don't care.
 ```
 
+[YT - Tim Corey - AI Hurts Everything Playlist](https://www.youtube.com/watch?v=oCs2hLsgwR8&list=PLLWMQd6PeGY3lHk3RlH0lKfr4rvyVk0K1)
+
+
 [[#Random Thoughts]]
 [[#Strengths, Weaknesses & Societal Impact]]
 
