@@ -5,6 +5,7 @@ Uses [[Typing#Duck Typing]]
 [Python Package Index](https://pypi.org) - Finds packages to install
 
 Contents
+- [[#Commands]]
 - [[#Mutable Defaults]]
 - [[#is_empty_or_whitespace]]
 - [[#Mixin]]
@@ -17,6 +18,14 @@ Contents
 - [[#Docstrings]]
 - [[#F-Strings]]
 - [[#Decorators]]
+
+---
+## Commands
+
+| Command      | Effect                               |
+| ------------ | ------------------------------------ |
+| pip list     | Shows all installed packages         |
+| where python | Displays the python install location |
 
 ---
 ## Mutable Defaults
