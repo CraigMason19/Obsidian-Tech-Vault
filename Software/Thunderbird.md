@@ -1,5 +1,9 @@
 An email client I switched to because Outlook was fine but then they changed it and it annoyed me.
 
+[[#Custom Styling]]
+[[#Filters]]
+[[#Addons]]
+
 ---
 ## Custom Styling
 
@@ -31,6 +35,8 @@ Under Tools > Message Filters
 
 ---
 ## Addons
--  PrintingTools NG
+
+PrintingTools NG
+- Better print options
 
 ---
