@@ -9,6 +9,7 @@ Resources
 
 [[#Overview]]
 [[#Differences to LLM's]]
+[[#Skills]]
 
 ---
 ## Overview
@@ -47,3 +48,10 @@ How I think of them
 - Can be given autonomy to make decisions
 
 ---
+## Skills
+
+These are simply  markdown files that are pre loaded into the Agent's context allow it to better perform a task.
+
+https://www.skills.sh
+- A NPM like repository for downloading skills
+- Obviously it could contain anything so you have to read / alter to make sure it doesn't do anything nefarious
