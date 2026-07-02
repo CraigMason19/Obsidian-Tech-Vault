@@ -1,7 +1,11 @@
 [[Blender]]
 
+Creators
+- [[#Artisans of Vaul]]
 
-[[#Artisans of Vaul]]
+Specific Things
+- [[#Ornament modelling]]
+
 
 ---
 
@@ -16,3 +20,11 @@
 ## Artisans of Vaul
 
 [AOV - YT - Trim](https://www.youtube.com/watch?v=2KR2emx5__M&list=WL&index=30)
+
+
+---
+# Ornament modelling
+
+https://www.youtube.com/watch?v=T026Q96gwIc&list=WL&index=36
+
+---
