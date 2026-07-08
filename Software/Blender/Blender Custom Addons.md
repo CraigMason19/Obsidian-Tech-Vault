@@ -11,7 +11,10 @@
 ---
 ## Creating Custom Addons / Scripts
 
-**NOTE:** To resolver errors in **VSCODE**, Pylance etc. Can `pip install fake-bpy-module-latest `
+**NOTE:** To resolver errors in **VSCODE**, Pylance etc. Also use type hinting to allow the code editor to use intellisense (Auto-complete).
+
+`pip install fake-bpy-module-latest `
+
 ### Process
 - Create a python script (Open that in VSCode as it is easier to code in there).
 - Open the script a scripting window, reload the script here when changed.
