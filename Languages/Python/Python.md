@@ -221,6 +221,9 @@ else:
 
 **NOTE**: args & kwargs are used by convention but could be anything.
 
+- args is defined with a single asterisk and is of type tuple
+- kwargs is defined with two asterisk and is of type dictionary
+
 ```python
 def order_pizza(size, *toppings, **details):
     print(f"{size} pizza")
