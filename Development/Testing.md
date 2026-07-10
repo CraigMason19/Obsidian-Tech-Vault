@@ -188,10 +188,9 @@ Example of how to write tests with Errors.
 
 Allows you to see which parts of the code are tested / covered. However, a 100% coverage might mean that you haven't tested everything (edge-cases etc).
 
-In Python
+**NOTE:** I installed globally on my machine so it's available for all projects.
 
 ```python
-# Note - I installed globally on my machine so it's available for all projects
 pip install coverage
 
 # Then in terminal

@@ -19,6 +19,8 @@ Contents
 - [[#F-Strings]]
 - [[#Decorators]]
 
+[[Testing#Python Example]]
+
 ---
 ## Commands
 
