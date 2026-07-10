@@ -22,9 +22,14 @@ Obsidian Is a note collation tool that shows links between various topics. Files
 ---
 ## Plugins
 
-### [Simple Table Math](https://github.com/eatcodeplay/obsidian-simple-table-math)
+**NOTE:** Obsidian plugins are vault specific NOT global
 
+ [Simple Table Math](https://github.com/eatcodeplay/obsidian-simple-table-math)
 - Allows basic math inside tables.
 - Supports SUM, AVG, MIN, MAX, SUB, MUL, and optional ranges.
+
+[Print](obsidian://show-plugin?id=print)
+- Simply adds print functionality as Obsidian doesn't by default
+- Right click or use the print icon
 
 ---
