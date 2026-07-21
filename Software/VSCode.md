@@ -42,7 +42,7 @@ Command palette > keyboard shortcuts
 | Shortcut     | Behaviour                            | Command ID                       |
 | ------------ | ------------------------------------ | -------------------------------- |
 | ALT + S      | Order selected lines alphabetically  | editor.action.sortLinesAscending |
-| CTRL + SPACE | Toggle zen mode so it's like blender |                                  |
+| CTRL + SPACE | Toggle zen mode so it's like blender | workbench.action.toggleZenMode   |
 | F5           | Run Code                             |                                  |
 | CTRL + F5    | Debug: Start Debugging               |                                  |
 ### Lines
