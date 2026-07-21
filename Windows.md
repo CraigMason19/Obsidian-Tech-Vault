@@ -1,17 +1,27 @@
+
+[[#File context menu]]
+[[#Windows Commands]]
 [[#mklink]]
 
-## Add create new file to context menu
+---
+## File context menu
 
-- Open Regedit
+Both ways require opening `Regedit`
+
+## Create new file
+
 - Navigate to Computer\\HKEY_CLASSES_ROOT\\(whatever file extension you want)
 - Right click on the extension key > New > Key
-- Name the new key "ShellNew"
-- Inside the ShellNew key, add a new string value
-- Name the string value "NullFile"
-- Change the NullFile's value to 1
+- Name the new key `ShellNew`
+- Inside the `ShellNew` key, add a new string value
+- Name the string value `NullFile`
+## Remove file
 
-That's it!
+- Navigate to Computer\\HKEY_CLASSES_ROOT\\(whatever file extension you want)
+- Change `ShellNew` → `ShellNew_disabled` 
+	- This means you can remove disabled and it will reappear
 
+---
 ## Windows Commands
 
 [Windows Commands](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
