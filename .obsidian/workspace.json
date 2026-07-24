@@ -1,0 +1,256 @@
+{
+  "main": {
+    "id": "2ece038af2c0fb26",
+    "type": "split",
+    "children": [
+      {
+        "id": "889b3008974f8bcb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3a98c0dc027fe2a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "7de26f14f9fa8ed8",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Languages/JavaScript/TypeScript.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "TypeScript"
+            }
+          },
+          {
+            "id": "d60097ddaad3a395",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Languages/JavaScript/JavaScript.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "JavaScript"
+            }
+          },
+          {
+            "id": "c3b5ca531c0c8234",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Languages/Python/Python.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Python"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "840689bc36d42998",
+    "type": "split",
+    "children": [
+      {
+        "id": "e7ec0d494d7834bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15ad146c5a615b51",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "65d586b82d2a087e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "source",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "37622b5025758676",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 305.5
+  },
+  "right": {
+    "id": "8a39d140ec9cf69f",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf83370670a46152",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7261d1a26c7c939a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_Craig/AI/Agents/Agents.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Agents"
+            }
+          },
+          {
+            "id": "3b1c6e5c7be340d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Languages/JavaScript/DENO.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from DENO"
+            }
+          },
+          {
+            "id": "482e400de1ae2382",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "01d23ab5cce20436",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Languages/JavaScript/DENO.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of DENO"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "print:Print note": false,
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c3b5ca531c0c8234",
+  "lastOpenFiles": [
+    "Resources.md",
+    "Software/Sourcetree.md",
+    "Languages/Python/Python.md",
+    "AI/AI Thoughts.md",
+    "Data Structures/Binary Heap.md",
+    "Software/Blender/Blender Custom Addons.md",
+    "Concepts/Data Structure/Priority Queue.md",
+    "Software/Blender/Blender Shortcuts.md",
+    "Software/Blender/Blender Projects & Ideas.md",
+    "Software/Blender/Blender.md",
+    "_Craig/Projects/Coding Projects/Coding Projects Overview.md",
+    "_Craig/Projects/Coding Projects/audio_splitter.md",
+    "_Craig/Craig.md",
+    "_Craig/Programming Maxims.md",
+    "_Craig/Resources.md",
+    "_Craig/Rubber Duck Debugging Method.md",
+    "_Craig/AI Transcripts/a list of annoyancies.md",
+    "_Craig/Projects/Coding Projects/en_words & ciphers.md",
+    "_Craig/Projects/Other Peoples.md",
+    "_Craig/Projects/Ideas.md",
+    "_Craig/Projects/Example Project Readme.md",
+    "_Craig/Projects/Example Project Outline.md",
+    "_Craig/Projects/Coding Projects/Clock Game.md",
+    "_Craig/Projects/Coding Projects/music_theory_docs/Music Theory Docs.md",
+    "_Craig/Projects/Coding Project Ideas/Program Launcher Chain.md",
+    "_Craig/Projects/Coding Project Ideas/Program Launcher Chain.pdf",
+    "_Craig/Projects/Coding Project Ideas/2d like web based game.md",
+    "Browser/Extensions",
+    "Untitled.base",
+    "_Craig/AI Transcripts",
+    "Untitled 3.base",
+    "Untitled 2.base",
+    "Untitled 1.base",
+    "desktop.ini",
+    "_Craig/Projects/Coding Projects/music_theory_docs",
+    "_Craig/Projects/Coding Projects",
+    "Untitled.canvas",
+    "Untitled 1.canvas"
+  ]
+}
