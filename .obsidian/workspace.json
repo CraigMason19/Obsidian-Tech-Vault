@@ -66,9 +66,19 @@
               "icon": "lucide-file",
               "title": "Python"
             }
+          },
+          {
+            "id": "294b3f99359ae043",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -212,11 +222,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c3b5ca531c0c8234",
+  "active": "15ad146c5a615b51",
   "lastOpenFiles": [
+    "Languages/Python/Snippets/simple_input_test_class.py",
+    "Languages/Python/Python.md",
     "Resources.md",
     "Software/Sourcetree.md",
-    "Languages/Python/Python.md",
     "AI/AI Thoughts.md",
     "Data Structures/Binary Heap.md",
     "Software/Blender/Blender Custom Addons.md",
@@ -240,7 +251,6 @@
     "_Craig/Projects/Coding Projects/music_theory_docs/Music Theory Docs.md",
     "_Craig/Projects/Coding Project Ideas/Program Launcher Chain.md",
     "_Craig/Projects/Coding Project Ideas/Program Launcher Chain.pdf",
-    "_Craig/Projects/Coding Project Ideas/2d like web based game.md",
     "Browser/Extensions",
     "Untitled.base",
     "_Craig/AI Transcripts",

@@ -15,4 +15,4 @@ inputs = [
 ]
 
 for _ in inputs:
-    print(f"{_} -> {result(_)}")
+    print(f"'{_}' -> {result(_)}")
