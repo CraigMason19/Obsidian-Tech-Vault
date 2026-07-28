@@ -112,7 +112,9 @@ namespace LotteryApp.UnitTests
 ---
 ### Python Example
 
-Look at `music_theory` for a real example. Large classes are split up by methods which become there own test classes  
+Look at `music_theory` for a real example. Large classes are split up by methods which become there own test classes.
+
+**NOTE**: The package to test should have a `__init__.py` file, so it is discoverable by `VSCode` testing, as the package will be imported.
 #### Console commands
 
 ```python
