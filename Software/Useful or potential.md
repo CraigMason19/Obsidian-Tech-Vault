@@ -1,4 +1,3 @@
 
 https://www.voidtools.com
-
-index pc for faster searching
+- Faster searching via PC Indexing
