@@ -64,5 +64,15 @@ Command palette > keyboard shortcuts
 ## Extensions
 
 - Live server
-- Code Runner
+	- Allows you to launch a local development server
+	- Allows you to open a html page
 
+- Code Spell Checker
+	- Checks for spelling mistakes
+	- Can add terms to workspace / global level dictionary
+
+- Duplicate Files
+	- Simple allows you to duplicate files / folders in the outliner
+
+- Code Runner
+	- Run code snippets or code file for multiple languages
