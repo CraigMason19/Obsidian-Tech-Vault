@@ -1,5 +1,15 @@
 A collection of useful links
 
+---
+
+[Dummy Text Generator](https://www.blindtextgenerator.com/lorem-ipsum)
+	- Generates random text for testing / placeholder purposes
+
+
+---
+
+
+
 [Exercism](https://exercism.org/dashboard)
 
 [Udemy](https://www.udemy.com/home/my-courses/learning/)
