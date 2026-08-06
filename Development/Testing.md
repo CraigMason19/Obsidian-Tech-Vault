@@ -13,6 +13,8 @@ Helps prevent bugs and makes refactoring much easier / safer.
 [[#Examples]]
 - [[#C Sharp Example]]
 - [[#Python Example]]
+	- [[#Errors]]
+	- [[#List and list of strings]]
 
 [[#Coverage]]
 
@@ -169,7 +171,7 @@ class TestExtra(TestBase):
         self.assertEqual(full_name, "Craig Mason")
 ```
 
-Example of how to write tests with Errors.
+#### Errors
 
 ```python
 	# Test error happens
@@ -185,6 +187,23 @@ Example of how to write tests with Errors.
         except ValueError:
             self.fail("ValueError was raised unexpectedly")
 ```
+
+#### List and list of strings
+
+```python
+class Foo(unittest.TestCase):
+    def test_bar_returns_list(self):
+        result = bar()
+        
+        self.assertIsInstance(result, list)
+
+    def test_words_from_letters_returns_list_of_str(self):
+        result = bar()
+
+        for _ in result:
+            self.assertIsInstance(_, str)
+```
+
 ---
 ## Coverage
 
