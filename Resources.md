@@ -1,5 +1,10 @@
 A collection of useful links
 
+[[#Learning]]
+- [[#Git]]
+- [[#SQL]]
+- [[#Touch Typing]]
+
 ---
 
 [Dummy Text Generator](https://www.blindtextgenerator.com/lorem-ipsum)
@@ -8,6 +13,28 @@ A collection of useful links
 
 ---
 
+## Learning+
+
+#### Git
+
+https://learngitbranching.js.org/
+- A GUI style interface for learning GIT
+
+https://ohmygit.org
+- A card like game that shows what your commands do in real time
+
+#### SQL
+
+https://mystery.knightlab.com
+- A murder detective game using SQL
+
+#### Touch Typing
+
+https://www.edclub.com/sportal/program-3.game
+
+
+
+---
 
 
 [Exercism](https://exercism.org/dashboard)
