@@ -28,9 +28,14 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 	- Shows modifiers as a list but can also be shown as a stack
 	- Can be set to show the time to compute overall and for each modifier
 
+- [Drop It](https://andreasaust.gumroad.com/l/drop_it)
+	- Allows you to easily stack objects on top of each other, or place on the floor
+	- **DEFAULT KEY**: V
 
-
-
+- [Easy HDRI](https://codeofart.gumroad.com/l/EasyHDRI)
+	- Easily allows you to swap between HDRI's without using the environment shader. Allows for faster lighting ideas
+	- Can Loop through HDRI's in a folder
+	- Can add a tint to the HDRI
 
 
 Extra Meshes
