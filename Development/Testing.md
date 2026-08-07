@@ -184,8 +184,8 @@ class TestExtra(TestBase):
         try:
             a = letters.LetterFrequency.percentage("e")
             b = letters.LetterFrequency.percentage("E")
-        except ValueError:
-            self.fail("ValueError was raised unexpectedly")
+		except Exception as e: 
+			self.fail(f"Raised an exception: {e}")
 ```
 
 #### List and list of strings
