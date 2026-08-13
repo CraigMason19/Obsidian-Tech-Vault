@@ -37,6 +37,9 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 	- Can Loop through HDRI's in a folder
 	- Can add a tint to the HDRI
 
+- [GeoCables](https://amanbairwal.gumroad.com/l/GeoCables)
+	- Quickly allows you to add cables into scenes
+
 
 Extra Meshes
 
