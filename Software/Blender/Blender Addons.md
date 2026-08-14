@@ -39,7 +39,14 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 
 - [GeoCables](https://amanbairwal.gumroad.com/l/GeoCables)
 	- Quickly allows you to add cables into scenes
+	- Located under `A-Tools` in the side panel
+	- `LMB` to place a 'waypoint' for the cables
+	- `ALT + LMB` to create a new cable
+	- Can be altered via Geometry Nodes
 
+
+
+---
 
 Extra Meshes
 
