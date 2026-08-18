@@ -184,7 +184,7 @@ class TestExtra(TestBase):
         try:
             a = letters.LetterFrequency.percentage("e")
             b = letters.LetterFrequency.percentage("E")
-		except Exception as e: 
+		except Exception as e: # pragma: no cover
 			self.fail(f"Raised an exception: {e}")
 ```
 
