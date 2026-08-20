@@ -44,7 +44,8 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 	- `ALT + LMB` to create a new cable
 	- Can be altered via Geometry Nodes
 
-
+- [uv-squares](https://superhivemarket.com/products/uv-squares)
+	- Allows you to easy straighten out uv un-wrappings
 
 ---
 
