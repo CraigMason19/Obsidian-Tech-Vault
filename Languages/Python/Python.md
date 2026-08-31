@@ -337,6 +337,21 @@ type OptionalNumber = int | float | None
 ## Docstrings
 
 A string in a class / module / function / method explaining how it works
+
+docstrings can be displayed via `help`
+
+```python
+def add(a, b):
+    """Adds two numbers"""
+    ...
+
+>>> help(add)
+
+Help on function add in module __main__:
+
+add(a, b)
+    Adds two numbers
+```
 #### Module Level
 
 ```python
