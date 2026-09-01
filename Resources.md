@@ -1,19 +1,39 @@
 A collection of useful links
 
+[[#Online Tools]]
+
+[[#Software]]
+
 [[#Learning]]
 - [[#Git]]
 - [[#SQL]]
 - [[#Touch Typing]]
 
 ---
+## Online Tools
 
 [Dummy Text Generator](https://www.blindtextgenerator.com/lorem-ipsum)
 	- Generates random text for testing / placeholder purposes
 
+[Dev Docs](https://devdocs.io)
+- Allows you search multiple docs in one place
+- Can download docs for use offline in your browser https://devdocs.io/offline
+
+[JSON Crack](https://jsoncrack.com)
+- Allows you to visualize JSON data as a tree
+
+---
+## Software
+
+https://www.voidtools.com
+- Faster searching via PC Indexing
 
 ---
 
-## Learning+
+## Learning
+
+[Developer Roadmaps](https://roadmap.sh)
+- Allows you to see what you need to know for a given role / technology
 
 #### Git
 
