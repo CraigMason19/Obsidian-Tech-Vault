@@ -10,12 +10,13 @@
 
 [Windows Keyboard shortcuts](https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
 
-| Command                         | Result            |
-| ------------------------------- | ----------------- |
-| Show Desktop / Restore Programs | WINDOWS + D       |
-| Switch Program                  | ALT + TAB         |
-| Minimize                        | CTRL + DOWN_ARROW |
-| Maximize                        | CTRL + UP_ARROW   |
+| Command                         | Result             |
+| ------------------------------- | ------------------ |
+| Show Desktop / Restore Programs | WINDOWS + D        |
+| Switch Program                  | ALT + TAB          |
+| Minimize                        | CTRL + DOWN_ARROW  |
+| Maximize                        | CTRL + UP_ARROW    |
+| Open Volume Panel               | CTRL + WINDOWS + V |
 
 ---
 ## Windows Commands
