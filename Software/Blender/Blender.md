@@ -115,13 +115,19 @@ I like to keep MY assets separate from other peoples, separate folders can be se
 # Example setup on Hard-Drive
 
 Blender Resources
-	- Assets
+	- Assets_Craig
 	- Assets_Others
 		- Mechanical Creature Kit Free
 		- The Plant Library
 		- Crafty Asset Pack
 ```
 
+### Linking vs Append
+
+- Append will bring in a new copy of the object from the asset location
+- Link will be bring in a linked copy. This will be in the same place as the original asset and will have to be 'made local' in order to be moved.
+	- The advantage is that if the asset changes it will be reflected. Great for infantry symbols (for example)
+	- Also decreases file size
 
 ---
 
