@@ -6,6 +6,7 @@ A collection of useful links
 
 [[#Learning]]
 - [[#Git]]
+- [[#Patterns]]
 - [[#SQL]]
 - [[#Touch Typing]]
 
@@ -42,6 +43,10 @@ https://learngitbranching.js.org/
 
 https://ohmygit.org
 - A card like game that shows what your commands do in real time
+
+#### Patterns
+
+https://refactoring.guru
 
 #### SQL
 

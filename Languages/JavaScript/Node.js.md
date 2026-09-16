@@ -12,7 +12,7 @@ Used so I can just write a script and run in **VSCode**
 
 Originally it could only be used on a web browser
 
-Not just a V8 wrapper but allows extra functionallity such as reading / writting to files, server connections etc...
+Not just a V8 wrapper but allows extra functionality such as reading / writing to files, server connections etc...
 
 
 Pros
