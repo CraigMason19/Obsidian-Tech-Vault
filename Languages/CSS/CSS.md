@@ -41,10 +41,10 @@ If you have a element with a width of 100 and a padding of 10 pixels...
    This ignores browser defaults to ensure a consistent baseline across different browsers.
 */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
-    box-sizing: bordor-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+	box-sizing: border-box;
 }
 ```
 
