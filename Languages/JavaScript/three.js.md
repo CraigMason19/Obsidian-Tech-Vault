@@ -11,7 +11,7 @@ https://threejs.org/manual/
 [[Node.js]] and [[NPM]] are installed on your machine
 
 - Copy your web dev empty project somewhere
-- Install [[three.js]]
+- Install [[Three.js]]
 - Install [[Vite]] as a dev dependency
 
 ```
