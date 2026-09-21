@@ -4,6 +4,16 @@ A version control service. A website that allows you to host repositories online
 
 A developer platform that allows developers to create, store, manage and share their code. It uses [[Git]] software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.
 
+[[#Downloading a folder]]
+[[#Hosting]]
+
+---
+## Downloading a folder
+
+Github doesn't allow this, paste the folder link here
+
+https://download-directory.github.io
+
 ---
 ## Hosting
 
@@ -15,3 +25,5 @@ To host a static site on Github
 
 go to repository settings
 pages
+
+---
