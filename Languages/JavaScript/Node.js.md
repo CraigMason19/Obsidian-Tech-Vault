@@ -29,6 +29,7 @@ Pros
 [[#Core Modules]]
 	- [[#OS]]
 	- [[#File System]]
+	- [[#Event Emitter]]
 
 
 
@@ -100,3 +101,20 @@ console.log(p.names) // [ 'Craig', 'John', 'Jane' ]
 
 ## OS
 ### File System
+
+### Event Emitter
+
+```js
+import { EventEmitter } from 'events';
+
+const emitter = new EventEmitter();
+
+// Register a listener
+emitter.on('customEvent', () => {
+   console.log("Heard 'customEvent'") 
+});
+
+// Raise an event, emit, broadcast
+emitter.emit('customEvent');
+```
+
