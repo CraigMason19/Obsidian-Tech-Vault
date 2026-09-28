@@ -1,5 +1,11 @@
 A way of displaying 3D in graphics / models in [[JavaScript]].
 
+| Negative Dir | Axis | Positive Dir |
+| :----------: | :--: | :----------: |
+|     Left     |  X   |    Right     |
+|     Down     |  Y   |      Up      |
+|     Away     |  Z   |   Towards    |
+
 https://threejs.org
 https://threejs.org/manual/
 
