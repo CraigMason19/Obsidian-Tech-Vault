@@ -27,6 +27,8 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 	- Changes the modifier list to the old style
 	- Shows modifiers as a list but can also be shown as a stack
 	- Can be set to show the time to compute overall and for each modifier
+	- Can allow you set favourites, for easy access
+	- Can allow you to overwrite the default settings for any modifier
 
 - [Drop It](https://andreasaust.gumroad.com/l/drop_it)
 	- Allows you to easily stack objects on top of each other, or place on the floor
