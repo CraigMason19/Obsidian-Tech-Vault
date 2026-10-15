@@ -120,7 +120,12 @@ Look at `music_theory` for a real example. Large classes are split up by methods
 #### Console commands
 
 ```python
+# Discover specific tests
 python -m coverage run -m unittest discover music_theory_tests
+
+# Discover all tests 
+python -m coverage run -m unittest discover
+
 python -m coverage html
 ```
 
