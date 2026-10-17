@@ -225,4 +225,10 @@ python -m coverage run -m unittest discover [test folder]
 python -m coverage html
 ``` 
 
+To ignore lines in the coverage report you can use `# pragma no cover` 
+
+``` python
+if __name__ == '__main__': # pragma no cover
+	...
+```
 ---
