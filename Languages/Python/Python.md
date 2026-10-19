@@ -9,6 +9,7 @@ Contents
 - [[#Mutable Defaults]]
 - [[#is_empty_or_whitespace]]
 - [[#Mixin]]
+- [[#Dataclasses]]
 - [[#Virtual Environments]]
 	- [[#Requirements]]
 - [[#CLI arguments]]
@@ -100,6 +101,21 @@ class Example(SimpleRepr):
 
 e = Example(5, 10) 
 print(e) # <Example {'a': 5, 'b': 10, 'c': None}>        
+```
+
+---
+## Dataclasses
+
+By default equality is implemented by checking all fields in the order they were declared. You can make it so a field isn't compared using `field(compare=False)`
+ 
+```python
+from dataclasses import dataclass, field
+
+@dataclass
+class Entity:
+    id: int
+    name: str
+    cached_mesh: object = field(compare=False)
 ```
 
 ---
