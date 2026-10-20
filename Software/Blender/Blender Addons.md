@@ -14,6 +14,11 @@ https://extensions.blender.org/themes/theme-deep-grey/
 
 - [K-Tools - Mode Highlight](https://extensions.blender.org/add-ons/k-tools-mode-highlight/)
 	- Allows you to easily see which mode you are by changing the tool bar colour.
+	- [[Blender Addons Usage#K-Tools]]
+
+- [ND](https://extensions.blender.org/add-ons/nd/)
+	- Faster and easier boolean operations 
+	- [[Blender Addons Usage#ND]]
 
 - [Distribute](https://www.youtube.com/watch?v=4sMclQJ8Nws&list=WL&index=57)
 	- Easily distribute / space items on a specific axis. 
