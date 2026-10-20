@@ -16,6 +16,7 @@ Allows scripting via [[Python]]
 - [[#Tutorials]]
 	- [[#Shorts]]
 
+[[#Portable]]
 [[#Unit Scale]]
 [[#Bambu Mini A1]]
 [[#Assets]]
@@ -71,6 +72,11 @@ Allows scripting via [[Python]]
 #### Shorts
 - [SouthernShotty - Colored light falloff](https://www.youtube.com/watch?v=qc5KlGvOlVY&list=WL&index=70&pp=iAQBsAgC)
 
+
+---
+## Portable
+
+if you make a folder called `portable` Blender will store the user info there as opposed to in appdata
 
 ---
 # Unit Scale
