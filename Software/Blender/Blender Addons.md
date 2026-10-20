@@ -1,11 +1,18 @@
 Good places to look are Gumroad & [Blender Market Now Superhive](https://blendermarket.com)
 
+[[#UI]]
 [[#Useful Plugins]]
+
+---
+## UI
+
+https://extensions.blender.org/themes/theme-deep-grey/
+- Last selected object is in Orange, the others are in blue
 
 ---
 ## Useful Plugins
 
-- K-Tools - Mode Highlight
+- [K-Tools - Mode Highlight](https://extensions.blender.org/add-ons/k-tools-mode-highlight/)
 	- Allows you to easily see which mode you are by changing the tool bar colour.
 
 - [Distribute](https://www.youtube.com/watch?v=4sMclQJ8Nws&list=WL&index=57)
@@ -50,6 +57,7 @@ Good places to look are Gumroad & [Blender Market Now Superhive](https://blender
 	- Allows you to easy straighten out uv un-wrappings
 
 ---
+
 
 Extra Meshes
 
