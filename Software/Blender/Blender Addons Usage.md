@@ -9,11 +9,13 @@
 ---
 ## MACHINE3tools
 
-- I like to enable `cursor` and `modes` pie menus
+- `modes` pie is enabled by default
+- Enable cursor and origin pie. `SHIFT + S`
 
-| Combo          | Effect     |
-| -------------- | ---------- |
-| CTRL + ALT + A | Align tool |
+| Combo          | Effect               |
+| -------------- | -------------------- |
+| CTRL + ALT + A | Align tool           |
+| TAB            | Quick mode switching |
 
 ---
 ## Snap measure

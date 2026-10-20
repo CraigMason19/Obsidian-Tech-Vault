@@ -61,6 +61,10 @@ https://extensions.blender.org/themes/theme-deep-grey/
 - [uv-squares](https://superhivemarket.com/products/uv-squares)
 	- Allows you to easy straighten out uv un-wrappings
 
+- MACHIN3tools
+	- [[Blender Addons Usage#MACHINE3tools]]
+
+
 ---
 
 
