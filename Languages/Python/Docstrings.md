@@ -2,6 +2,7 @@
 
 [Google Style Guide - Comments & Docstrings](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)
 
+---
 
 [[#Overview]]
 - [[#Display]]
@@ -52,9 +53,23 @@ returns the result
 ---
 ## pydoc.py
 
+Python's built-in documentation tool.
 
+Display all docstrings in a file
+```
+python -m pydoc python_file
+```
 
+Open docstring info in your browser
+**NOTE:**  the browser index is built from Python's module search paths (`sys.path`)
+```
+python -m pydoc -b
+```
 
+Generate an HTML file of the docstrings
+```
+python -m pydoc -w python_file
+```
 
 ---
 ## Package Level
