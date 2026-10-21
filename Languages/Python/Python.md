@@ -1,8 +1,11 @@
 #language | [[Docstrings]] | [[QT Designer]]
 
-Uses [[Typing#Duck Typing]]
 
 [Python Package Index](https://pypi.org) - Finds packages to install
+
+Related
+- [[Typing#Duck Typing]]
+- [[Docstrings]]
 
 Contents
 - [[#Commands]]
@@ -16,7 +19,6 @@ Contents
 - [[#args & kwargs]]
 - [[#Modules / Packages]]
 - [[#Type Hinting]]
-- [[#Docstrings]]
 - [[#F-Strings]]
 - [[#Decorators]]
 
@@ -25,10 +27,11 @@ Contents
 ---
 ## Commands
 
-| Command      | Effect                               |
-| ------------ | ------------------------------------ |
-| pip list     | Shows all installed packages         |
-| where python | Displays the python install location |
+| Command                 | Effect                               |
+| ----------------------- | ------------------------------------ |
+| pip list                | Shows all installed packages         |
+| pip uninstall [package] | Remove a certain package             |
+| where python            | Displays the python install location |
 
 ---
 ## Mutable Defaults
@@ -347,124 +350,6 @@ print(a, b) # A None
 
 # In Python 3.12
 type OptionalNumber = int | float | None
-```
-
----
-## Docstrings
-
-A string in a class / module / function / method explaining how it works
-
-docstrings can be displayed via `help`
-
-```python
-def add(a, b):
-    """Adds two numbers"""
-    ...
-
->>> help(add)
-
-Help on function add in module __main__:
-
-add(a, b)
-    Adds two numbers
-```
-#### Module Level
-
-```python
-"""
-Defines the KeyType enumeration for musical keys, representing either major or 
-minor.
-
-This module provides:
-- An Enum class `KeyType` with two values: Major and Minor.
-- Utility methods to list all key types, select a random key type, and retrieve
-  the parallel (opposite) key.
-- String representations for clean display and debugging.
-
-Example:
-    >>> from music_theory.key_type import KeyType
-    >>> kt = KeyType.Major
-    >>> print(f"Selected key: {kt}, Parallel: {kt.parallel}")
-    Selected key: Major, Parallel: Minor
-"""
-```
-#### Class Level
-
-```python
-""" A class representing a musical chord. 
-    
-Attributes:
-	root:
-		The Note the rest of the chord is built from.
-	type:
-		A ChordType. 
-	notes:
-		An array containing the root, 3rd(Major or Minor) & the fifth
-
-Methods:
-	__init__(self, root, chord_type):
-		Constructs the chord.
-	random(cls):
-		A class method to return a random chord.
-	__eq__(self, other):
-		Compares two chords.
-	notation(self):
-		Returns the chord's notation without the Note.
-	quality(self):
-		An alias for notation. Returns the chord's notation without the Note.
-	add9(self):
-		Returns an array of the chord's notes with the added 9th
-	add11(self):
-		Returns an array of the chord's notes with the added 11th
-	add13(self):
-		Returns an array of the chord's notes with the added 13th
-	__str__(self):
-		Returns a string representation of the Chord.
-	__repr__(self):
-		Returns a string representation of the Chord.
-"""
-```
-#### Function / method level
-
-```python
-def unique_notes_in_chord(*args):
-"""
-Collects all unique notes from the given Chords and returns them as a 
-list, sorted by the the Notes enumeration value.
-
-Example:
-    >>> unique_notes_in_chords(
-	...     Chord(Note.A, ChordType.Major),
-	...     Chord(Note.A, ChordType.Minor)
-	... )
-	[Note.C, Note.Db, Note.E, Note.A]
-	
-	>>> from music_theory.key_type import KeyType
-    >>> kt = KeyType.Major
-    >>> print(f"Selected key: {kt}, Parallel: {kt.parallel}")
-	Selected key: Major, Parallel: Minor
-
-Args:
-	*args (Chord): 
-		One or more Chord objects to extract notes from.
-		
-	tuning (list[Note]):
-		A list of notes representing each string of the instrument.
-		
-Raises:   FIRST"!!!!!!!!!!!! BEFORE RETURNS
-	ValueError:
-		If `fret` is a negative.	
-		
-Returns:
-	list[Note]: 
-		A list of unique Notes sorted by their value.
-""" 
-
-
-
-from typing import Self # 3.11
-def __eq__(self, other: Self) -> bool:
-
 ```
 
 ---
