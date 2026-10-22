@@ -4,6 +4,7 @@ Obsidian Is a note collation tool that shows links between various topics. Files
 
 [[#Examples]]
 [[#Plugins]]
+[[#Show all Files]]
 
 ---
 
@@ -33,3 +34,10 @@ Obsidian Is a note collation tool that shows links between various topics. Files
 - Right click or use the print icon
 
 ---
+## Show all Files
+
+Sometimes files like `.py` etc.. won't show by default if you want to see them
+
+Settings
+- Files & Links 
+	- Activate “Detect all file extensions”
