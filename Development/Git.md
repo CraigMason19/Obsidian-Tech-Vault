@@ -8,6 +8,7 @@ Monitors and tracks changes across your files locally. It monitors what was chan
 Not to be confused with [[GitHub]]. Which is a hosting service.
 
 [[#Commands]]
+[[#Tags]]
 
 [[#Workflow]]
 - [[#Push, Fetch & Pull]]
@@ -15,8 +16,7 @@ Not to be confused with [[GitHub]]. Which is a hosting service.
 - [[#Stashing]]
 - [[#Pull request (PR)]]
 - [[#Forking]]
-- [[#Collaborators]]
-- 
+
 [[#Basic Workflow For Collaboration]]
 
 ---
@@ -51,6 +51,22 @@ Not to be confused with [[GitHub]]. Which is a hosting service.
 | git checkout [name]                         | Switch branches                                                                                        |
 | git checkout [commit ID]                    | Switch to a specific commit                                                                            |
 | git merge [destination branch] -m [message] | Merge current branch into the destination branch                                                       |
+
+---
+## Tags
+
+Can be used to mark a specific commit as a version number. This means we can install specific versions 
+
+Install latest commits on branch
+```
+pip install git+https://github.com/CraigMason19/roman_numerals
+```
+
+Install via a tag
+```
+pip install git+https://github.com/CraigMason19/roman_numerals@"v1.0.3"
+```
+
 
 ---
 ## Workflow
