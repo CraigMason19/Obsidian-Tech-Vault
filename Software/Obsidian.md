@@ -33,6 +33,10 @@ Obsidian Is a note collation tool that shows links between various topics. Files
 - Simply adds print functionality as Obsidian doesn't by default
 - Right click or use the print icon
 
+[Fast Text Color](https://github.com/superschnizel/obsidian-fast-text-color)
+- Allows coloured text.
+- Highlight the text -> right click -> choose colour
+
 ---
 ## Show all Files
 
