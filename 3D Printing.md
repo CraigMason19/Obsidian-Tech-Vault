@@ -1,6 +1,8 @@
 [[#FDM vs Resin]]
 [[#Bambu Labs]]
 
+[[#Caliper]]
+
 [GitHub - STL Thumb](https://github.com/unlimitedbacon/stl-thumb) 
 - Thumbnail generator for 3D models (STL, OBJ, 3MF). Shows previews on Linux and Windows
 
@@ -22,3 +24,15 @@ I got a 0.2mm nozzle
 
 PLA matte - 
 PLA basic -
+
+---
+
+## Caliper
+
+https://caliper.synrgs.tech
+
+Allows you to combine objects together properly into one STL.
+
+- Model in [[Blender]], various objects overlapping etc...
+- Convert it to an STL in Calpier, this slices it for better 3D printing results
+
