@@ -20,6 +20,10 @@ https://extensions.blender.org/themes/theme-deep-grey/
 	- Faster and easier boolean operations 
 	- [[Blender Addons Usage#ND]]
 
+- [Auto Apply Transform](https://arsides.gumroad.com/l/THZfd)
+	- Allows you to apply location & rotation and scale automatically, found in `side view -> item`
+	- Really useful to auto-apply scale to things
+	
 - [Distribute](https://www.youtube.com/watch?v=4sMclQJ8Nws&list=WL&index=57)
 	- Easily distribute / space items on a specific axis. 
 
