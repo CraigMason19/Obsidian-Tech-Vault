@@ -1,5 +1,11 @@
 #AI 
 
+[[#LLM's]]
+[[#Agents]]
+
+---
+## LLM's
+
 **Byte-Pair Encoding**
 - A tokenization algorithm that builds tokens from characters .a common method of tokenizing a corpus before an LLM can train on it.
 
@@ -22,3 +28,10 @@ tokenizations = [
 	["un", "lockable"],
 	["unlock", "able"],
 ]
+```
+
+---
+## Agents
+
+Harness
+- The code surrounding a LLM for agents
