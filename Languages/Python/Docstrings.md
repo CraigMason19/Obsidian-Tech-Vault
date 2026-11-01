@@ -9,10 +9,15 @@
 
 [[#pydoc.py]]
 
-[[#Package Level]]
-[[#Module Level]]
-[[#Class Level]]
-[[#Function / Method Level]]
+Custom notes
+- [[#Package Level]]
+- [[#Module Level]]
+- [[#Class Level]]
+- [[#Function / Method Level]]
+
+[[#Official Python Examples]]
+- [[#Official Python Examples#pickle module]]
+- [[#Official Python Examples#counter module]]
 
 ---
 ## Overview
@@ -99,6 +104,8 @@ Modules:
 ---
 ## Module Level
 
+**~={red}NOTE=~:** Ignore `_` or `__`
+
 Things to include
 - Filename
 - Description
@@ -134,6 +141,8 @@ Functions:
 
 ---
 ## Class Level
+
+**~={red}NOTE=~:** Ignore `_` or `__`
 
 Things to include
 - Description
@@ -227,4 +236,56 @@ Returns:
 from typing import Self # 3.11
 def __eq__(self, other: Self) -> bool:
 
+```
+
+---
+## Official Python Examples
+
+### pickle module
+
+```python
+"""Create portable serialized representations of Python objects.
+
+See module copyreg for a mechanism for registering custom picklers.
+See module pickletools source for extensive comments.
+
+Classes:
+
+    Pickler
+    Unpickler
+
+Functions:
+
+    dump(object, file)
+    dumps(object) -> string
+    load(file) -> object
+    loads(bytes) -> object
+
+Misc variables:
+
+    __version__
+    format_version
+    compatible_formats
+
+"""
+```
+
+### counter module
+
+```python
+'''This module implements specialized container datatypes providing
+alternatives to Python's general purpose built-in containers, dict,
+list, set, and tuple.
+
+* namedtuple   factory function for creating tuple subclasses with named fields
+* deque        list-like container with fast appends and pops on either end
+* ChainMap     dict-like class for creating a single view of multiple mappings
+* Counter      dict subclass for counting hashable objects
+* OrderedDict  dict subclass that remembers the order entries were added
+* defaultdict  dict subclass that calls a factory function to supply missing values
+* UserDict     wrapper around dictionary objects for easier dict subclassing
+* UserList     wrapper around list objects for easier list subclassing
+* UserString   wrapper around string objects for easier string subclassing
+
+'''
 ```
