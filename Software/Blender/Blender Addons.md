@@ -68,6 +68,8 @@ https://extensions.blender.org/themes/theme-deep-grey/
 - MACHIN3tools
 	- [[Blender Addons Usage#MACHINE3tools]]
 
+- [Flowify](https://superhivemarket.com/products/flowify) - ~={red}PAID=~
+	- Allows you to bend flat objects around curves & cylindrical objects
 
 ---
 
