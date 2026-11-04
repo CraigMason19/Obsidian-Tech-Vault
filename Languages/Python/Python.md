@@ -4,9 +4,10 @@
 [Python Package Index](https://pypi.org) - Finds packages to install
 
 Related
-- [[Typing#Duck Typing]]
 - [[Docstrings]]
-
+- [[Testing#Python Example]]
+- [[Typing#Duck Typing]]
+ 
 Contents
 - [[#Commands]]
 - [[#Mutable Defaults]]
@@ -21,8 +22,6 @@ Contents
 - [[#Type Hinting]]
 - [[#F-Strings]]
 - [[#Decorators]]
-
-[[Testing#Python Example]]
 
 ---
 ## Commands
