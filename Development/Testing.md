@@ -15,6 +15,7 @@ Helps prevent bugs and makes refactoring much easier / safer.
 - [[#Python Example]]
 	- [[#Errors]]
 	- [[#List and list of strings]]
+	- [[#Subtests]]
 
 [[#Coverage]]
 
@@ -207,6 +208,34 @@ class Foo(unittest.TestCase):
 
         for _ in result:
             self.assertIsInstance(_, str)
+```
+
+#### Subtests
+
+Allows you test multiples things at once. Great for validation
+
+```python
+import unittest
+
+class Example(unittest.TestCase):
+    def test_lowercase_examples(self):
+        inputs = [
+            "abc",
+            "ABC",
+        ]
+        
+        for value in inputs:
+            with self.subTest(value=value):
+                self.assertTrue(value.islower())
+
+if __name__ == '__main__':  # pragma: no cover
+    unittest.main()
+```
+
+So here we can see which input test string failed.
+
+```
+FAIL: test_lowercase_examples (__main__.Example.test_lowercase_examples) (value='ABC')
 ```
 
 ---
