@@ -64,22 +64,7 @@ print(add_to_list_improved("bar")) # ['bar']
 ---
 ## is_empty_or_whitespace
 
-Not in Python. So here's a simple reusable one
-
-```python
-def is_empty_or_whitespace(s: str) -> bool:
-    """
-    A simple function to determine if a string is empty or made of whitespaces.
-
-    Args:
-        s (str):
-            The string to validate.
-
-    Returns:
-        bool:
-    """
-    return not s or s.isspace()
-```
+In `snippets` folder 
 
 ---
 ## Mixin
