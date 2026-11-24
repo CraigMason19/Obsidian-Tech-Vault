@@ -68,6 +68,15 @@ https://extensions.blender.org/themes/theme-deep-grey/
 - MACHIN3tools
 	- [[Blender Addons Usage#MACHINE3tools]]
 
+-  [Nodevana](https://superhivemarket.com/products/nodevana) - ~={red}PAID=~ ~={green}OWNED=~
+	- Allows node organisation
+
+
+
+
+
+
+
 - [Flowify](https://superhivemarket.com/products/flowify) - ~={red}PAID=~
 	- Allows you to bend flat objects around curves & cylindrical objects
 
